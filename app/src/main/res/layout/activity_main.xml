@@ -19,9 +19,11 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:contentDescription="@string/logo_hounorte"
             android:layout_width="148dp"
             android:layout_height="132dp"
-            android:src="@drawable/hounorte_green" />
+            android:src="@drawable/hounorte_green"
+            />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -30,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Bem Vindo!"
+        android:text="@string/bem_vindo"
         android:textColor="#333333"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -45,7 +47,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:lineSpacingExtra="4dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        android:text="@string/lorem_ipsum"
         android:textAlignment="center"
         android:textColor="#333333"
         android:textSize="16sp"
@@ -60,9 +62,9 @@
         android:layout_height="38dp"
         android:layout_marginTop="196dp"
         android:background="@drawable/bg_btn_cadastrar"
-        android:text="Quero me cadastrar"
+        android:text="@string/me_cadastrar"
         android:textAllCaps="false"
-        android:textColor="#333333"
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,9 +75,9 @@
     <Button
         android:layout_width="217.66dp"
         android:layout_height="38dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/bg_btn_cadastrado"
-        android:text="Já sou cadastrado"
+        android:text="@string/sou_cadastrado"
         android:textAllCaps="false"
         android:textColor="#333333"
         android:textStyle="bold"
