@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Hounorte</string>
+    <string name="bem_vindo">Bem Vindo!</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="me_cadastrar">Quero me cadastrar</string>
+    <string name="sou_cadastrado">Já sou cadastrado</string>
+    <string name="logo_hounorte">Logo Hounorte</string>
 </resources>
