@@ -21,4 +21,9 @@
     <string name="email_senha">Email | Senha?</string>
     <string name="nao_possui_conta">Ainda não possui conta?</string>
     <string name="cadastre_se">Cadastre-se</string>
+    <string name="nome_completo">Nome Completo</string>
+    <string name="idade">Idade</string>
+    <string name="criar_conta">Criar Conta</string>
+    <string name="possui_conta">Já possui conta?</string>
+    <string name="login">Login</string>
 </resources>
