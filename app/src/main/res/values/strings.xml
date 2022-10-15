@@ -5,4 +5,20 @@
     <string name="me_cadastrar">Quero me cadastrar</string>
     <string name="sou_cadastrado">Já sou cadastrado</string>
     <string name="logo_hounorte">Logo Hounorte</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="esqueceu">Esqueceu</string>
+    <string name="email_senha">Email | Senha?</string>
+    <string name="nao_possui_conta">Ainda não possui conta?</string>
+    <string name="cadastre_se">Cadastre-se</string>
 </resources>
