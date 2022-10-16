@@ -8,6 +8,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btn_arrow_back"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFFCE5"
@@ -154,6 +155,23 @@
                 android:textStyle="bold" />
 
         </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_arrow_back_cadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            app:backgroundTint="#00FFFFFF"
+            app:borderWidth="2dp"
+            app:elevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:pressedTranslationZ="3dp"
+            app:rippleColor="#00FFFFFF"
+            app:srcCompat="@drawable/ic_arrow_back"
+            android:focusable="true" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -22,7 +22,7 @@ public class FormLogin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(FormLogin.this, FormCadastro.class);
+                Intent intent = new Intent(getApplicationContext(), FormCadastro.class);
                 startActivity(intent);
             }
         });
