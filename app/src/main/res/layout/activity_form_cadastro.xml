@@ -171,7 +171,8 @@
             app:pressedTranslationZ="3dp"
             app:rippleColor="#00FFFFFF"
             app:srcCompat="@drawable/ic_arrow_back"
-            android:focusable="true" />
+            android:focusable="true"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
