@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/btn_arrow_back"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="#FFFCE5"
         tools:context=".FormCadastro">
 
@@ -109,7 +110,7 @@
             app:layout_constraintTop_toBottomOf="@+id/container_components" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_entrar"
+            android:id="@+id/btn_criar_conta"
             style="@style/Button_Type"
             android:layout_marginTop="36dp"
             android:background="@drawable/bg_btn_cadastrar"
@@ -127,12 +128,14 @@
             android:layout_height="29dp"
             android:layout_marginTop="24dp"
 
+            android:layout_marginBottom="16dp"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_entrar"
-            app:layout_constraintVertical_bias="0.0">
+            app:layout_constraintTop_toBottomOf="@+id/btn_criar_conta"
+            app:layout_constraintVertical_bias="1.0">
 
             <TextView
                 android:id="@+id/txt_possui_conta"

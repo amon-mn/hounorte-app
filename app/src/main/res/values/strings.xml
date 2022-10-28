@@ -26,4 +26,20 @@
     <string name="criar_conta">Criar Conta</string>
     <string name="possui_conta">Já possui conta?</string>
     <string name="login">Login</string>
+    <string name="title_home">Olá, Amon</string>
+    <string name="descricao_home">Pratique seus conhecimentos e seja aprovado com as questões mais cobradas nos vestibulares do Amazonas</string>
+    <string name="title_home_lista">Listas de Exercícios</string>
+    <string name="btn_ver_tudo">Ver Tudo</string>
+    <string name="redacao">Redação</string>
+    <string name="matematica">Matemática</string>
+    <string name="geografia">Geografia</string>
+    <string name="historia">História</string>
+    <string name="ingles">Inglês</string>
+    <string name="portugues">Português</string>
+    <string name="title_home_vest">Vestibulares</string>
+    <string name="btn_ver_mais">Ver Mais</string>
+    <string name="ufam">UFAM</string>
+    <string name="ifam">IFAM</string>
+    <string name="uea">UEA</string>
+    <string name="enem">ENEM</string>
 </resources>
