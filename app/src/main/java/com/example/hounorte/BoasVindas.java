@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class BoasVindas extends AppCompatActivity {
 
     private AppCompatButton btn_cadastrar;
     private AppCompatButton btn_cadastrado;
@@ -15,14 +15,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_boas_vindas);
         IniciarComponentes();
 
         btn_cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent( MainActivity.this, FormCadastro.class);
+                Intent intent = new Intent( BoasVindas.this, FormCadastro.class);
                 startActivity(intent);
             }
         });
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, FormLogin.class);
+                Intent intent = new Intent(BoasVindas.this, FormLogin.class);
                 startActivity(intent);
             }
         });
