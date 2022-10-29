@@ -33,6 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/bem_vindo"
+            android:fontFamily="@font/quicksand_bold"
             android:textColor="#333333"
             android:textSize="22sp"
             android:textStyle="bold"
@@ -81,6 +82,7 @@
             android:background="@drawable/bg_btn_cadastrar"
             android:elevation="10dp"
             android:padding="10dp"
+            android:fontFamily="@font/quicksand_bold"
             android:text="@string/entrar"
             app:layout_constraintBottom_toBottomOf="@+id/container_components"
             app:layout_constraintEnd_toEndOf="@+id/container_components"
@@ -115,7 +117,7 @@
                 android:id="@+id/esqueceu_es"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:fontFamily="@font/quicksand_bold"
                 android:text="@string/esqueceu"
                 android:textColor="@color/black_gray"
                 android:textSize="18sp"
@@ -127,6 +129,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:text="@string/email_senha"
+                android:fontFamily="@font/quicksand_bold"
                 android:textColor="@color/green_theme"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -150,7 +153,7 @@
                 android:id="@+id/txt_nao_possui_conta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:fontFamily="@font/quicksand_bold"
                 android:text="@string/nao_possui_conta"
                 android:textColor="@color/black_gray"
                 android:textSize="18sp"
@@ -162,6 +165,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:text="@string/cadastre_se"
+                android:fontFamily="@font/quicksand_bold"
                 android:textColor="@color/green_theme"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -183,7 +187,8 @@
             app:pressedTranslationZ="3dp"
             app:rippleColor="#00FFFFFF"
             app:srcCompat="@drawable/ic_arrow_back"
-            android:focusable="true" />
+            android:focusable="true"
+            tools:ignore="ContentDescription" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,8 +14,9 @@
         >
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_home"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="1443dp">
 
             <View
                 android:id="@+id/viewHeaderBackground"
@@ -36,7 +37,7 @@
                 app:layout_constraintHorizontal_bias="0.044"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                />
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -47,13 +48,15 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.955"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription"/>
 
             <TextView
                 android:layout_width="110dp"
                 android:layout_height="28dp"
                 android:layout_marginTop="94dp"
                 android:text="@string/title_home"
+                android:fontFamily="@font/quicksand_bold"
                 android:textAllCaps="false"
                 android:textColor="@color/black_gray"
                 android:textSize="22sp"
@@ -68,6 +71,7 @@
                 android:layout_width="327dp"
                 android:layout_height="66dp"
                 android:layout_marginTop="138dp"
+                android:fontFamily="@font/quicksand"
                 android:text="@string/descricao_home"
                 android:textAllCaps="false"
                 android:textColor="@color/black_gray"
@@ -83,11 +87,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
+                android:fontFamily="@font/quicksand_bold"
                 android:text="@string/title_home_lista"
                 android:textAllCaps="false"
                 android:textColor="@color/black_gray"
                 android:textSize="22sp"
-                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.074"
                 app:layout_constraintStart_toStartOf="parent"
@@ -96,14 +100,14 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_vt_exercicios"
                 android:layout_width="80dp"
-                android:layout_height="30dp"
+                android:layout_height="32dp"
                 android:layout_marginTop="32dp"
                 android:background="@drawable/bg_btn_cadastrar"
+                android:fontFamily="@font/quicksand_bold"
                 android:text="@string/btn_ver_tudo"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="14sp"
-                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.864"
                 app:layout_constraintStart_toEndOf="@+id/textView4"
@@ -113,7 +117,7 @@
                 android:id="@+id/gridLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="16dp"
                 android:alignmentMode="alignMargins"
                 android:columnCount="2"
                 android:columnOrderPreserved="false"
@@ -130,28 +134,32 @@
                     android:layout_columnWeight="1"
                     android:layout_margin="16dp"
                     app:cardCornerRadius="12dp"
-                    app:cardElevation="6dp">
+                    app:cardElevation="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@drawable/bg_categories"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="16dp"
                         tools:ignore="UseCompoundDrawables">
 
                         <ImageView
-                            android:layout_width="72dp"
-                            android:layout_height="72dp"
-                            android:src="@drawable/redacao_icon" />
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/redacao_icon"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
+                            android:fontFamily="@font/quicksand_bold"
                             android:text="@string/redacao"
                             android:textColor="@color/black_gray"
-                            android:textSize="18sp" />
+                            android:textSize="18sp"
+                            android:textStyle="normal" />
 
                     </LinearLayout>
 
@@ -164,11 +172,12 @@
                     android:layout_columnWeight="1"
                     android:layout_margin="16dp"
                     app:cardCornerRadius="12dp"
-                    app:cardElevation="6dp">
+                    app:cardElevation="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@drawable/bg_categories"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="16dp"
@@ -177,12 +186,14 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/mat_icon" />
+                            android:src="@drawable/mat_icon"
+                            tools:ignore="ContentDescription"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
+                            android:fontFamily="@font/quicksand_bold"
                             android:text="@string/matematica"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -198,25 +209,28 @@
                     android:layout_columnWeight="1"
                     android:layout_margin="16dp"
                     app:cardCornerRadius="12dp"
-                    app:cardElevation="6dp">
+                    app:cardElevation="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@drawable/bg_categories"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="16dp"
                         tools:ignore="UseCompoundDrawables">
 
                         <ImageView
-                            android:layout_width="72dp"
-                            android:layout_height="72dp"
-                            android:src="@drawable/geo_icon" />
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/geo_icon"
+                            tools:ignore="ContentDescription"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
+                            android:fontFamily="@font/quicksand_bold"
                             android:text="@string/geografia"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -232,11 +246,12 @@
                     android:layout_columnWeight="1"
                     android:layout_margin="16dp"
                     app:cardCornerRadius="12dp"
-                    app:cardElevation="6dp">
+                    app:cardElevation="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@drawable/bg_categories"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="16dp"
@@ -245,12 +260,14 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/hist_icon" />
+                            android:src="@drawable/hist_icon"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
+                            android:fontFamily="@font/quicksand_bold"
                             android:text="@string/historia"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -266,25 +283,28 @@
                     android:layout_columnWeight="1"
                     android:layout_margin="16dp"
                     app:cardCornerRadius="12dp"
-                    app:cardElevation="6dp">
+                    app:cardElevation="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@drawable/bg_categories"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="16dp"
                         tools:ignore="UseCompoundDrawables">
 
                         <ImageView
-                            android:layout_width="72dp"
-                            android:layout_height="72dp"
-                            android:src="@drawable/linguagens_icon" />
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/linguagens_icon"
+                            tools:ignore="ContentDescription"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
+                            android:fontFamily="@font/quicksand_bold"
                             android:text="@string/ingles"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -300,11 +320,12 @@
                     android:layout_columnWeight="1"
                     android:layout_margin="16dp"
                     app:cardCornerRadius="12dp"
-                    app:cardElevation="6dp">
+                    app:cardElevation="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@drawable/bg_categories"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="16dp"
@@ -313,12 +334,14 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/port_icon" />
+                            android:src="@drawable/port_icon"
+                            tools:ignore="ContentDescription"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
+                            android:fontFamily="@font/quicksand_bold"
                             android:text="@string/portugues"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -333,11 +356,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
+                android:fontFamily="@font/quicksand_bold"
                 android:text="@string/title_home_vest"
                 android:textAllCaps="false"
                 android:textColor="@color/black_gray"
                 android:textSize="22sp"
-                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.074"
                 app:layout_constraintStart_toStartOf="parent"
@@ -347,14 +370,14 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_vm_vest"
                 android:layout_width="80dp"
-                android:layout_height="30dp"
+                android:layout_height="32dp"
                 android:layout_marginTop="24dp"
                 android:background="@drawable/bg_btn_cadastrar"
+                android:fontFamily="@font/quicksand_bold"
                 android:text="@string/btn_ver_mais"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="14sp"
-                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.913"
                 app:layout_constraintStart_toEndOf="@+id/tv_vestibulares"
@@ -364,7 +387,7 @@
                 android:id="@+id/gl_vestibulares"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="19dp"
+                android:layout_marginTop="16dp"
                 android:alignmentMode="alignMargins"
                 android:columnCount="2"
                 android:columnOrderPreserved="false"
@@ -381,25 +404,28 @@
                     android:layout_columnWeight="1"
                     android:layout_margin="16dp"
                     app:cardCornerRadius="12dp"
-                    app:cardElevation="6dp">
+                    app:cardElevation="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@drawable/bg_categories"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="16dp"
                         tools:ignore="UseCompoundDrawables">
 
                         <ImageView
-                            android:layout_width="72dp"
+                            android:layout_width="80dp"
                             android:layout_height="72dp"
-                            android:src="@drawable/ufam_logo" />
+                            android:src="@drawable/ufam_logo"
+                            tools:ignore="ContentDescription"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
+                            android:fontFamily="@font/quicksand_bold"
                             android:text="@string/ufam"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -415,11 +441,12 @@
                     android:layout_columnWeight="1"
                     android:layout_margin="16dp"
                     app:cardCornerRadius="12dp"
-                    app:cardElevation="6dp">
+                    app:cardElevation="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@drawable/bg_categories"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="16dp"
@@ -428,12 +455,14 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/ifam_logo" />
+                            android:src="@drawable/ifam_logo"
+                            tools:ignore="ContentDescription"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
+                            android:fontFamily="@font/quicksand_bold"
                             android:text="@string/ifam"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -449,25 +478,28 @@
                     android:layout_columnWeight="1"
                     android:layout_margin="16dp"
                     app:cardCornerRadius="12dp"
-                    app:cardElevation="6dp">
+                    app:cardElevation="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@drawable/bg_categories"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="16dp"
                         tools:ignore="UseCompoundDrawables">
 
                         <ImageView
-                            android:layout_width="72dp"
-                            android:layout_height="72dp"
-                            android:src="@drawable/uea_logo" />
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/uea_logo"
+                            tools:ignore="ContentDescription"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
+                            android:fontFamily="@font/quicksand_bold"
                             android:text="@string/uea"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -483,11 +515,12 @@
                     android:layout_columnWeight="1"
                     android:layout_margin="16dp"
                     app:cardCornerRadius="12dp"
-                    app:cardElevation="6dp">
+                    app:cardElevation="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@drawable/bg_categories"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="16dp"
@@ -496,13 +529,15 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/enem_logo" />
+                            android:src="@drawable/enem_logo"
+                            tools:ignore="ContentDescription"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
                             android:text="@string/enem"
+                            android:fontFamily="@font/quicksand_bold"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
 
@@ -510,6 +545,56 @@
 
                 </androidx.cardview.widget.CardView>
             </GridLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFCE5"
+                android:elevation="10dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gl_vestibulares">
+
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FAF7E0"
+                    app:tabIconTint="@color/green_theme"
+                    app:tabIndicatorColor="@color/green_theme"
+                    app:tabRippleColor="@null"
+                    app:tabMode="fixed"
+                    tools:layout_editor_absoluteY="1352dp">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/ic_home"
+                        />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/ic_list_bulleted" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/ic_grid_view" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/ic_person" />
+
+
+                </com.google.android.material.tabs.TabLayout>
+
+            </androidx.cardview.widget.CardView>
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
