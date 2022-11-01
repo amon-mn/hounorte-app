@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "326772607397",
+    "project_id": "hounorte-8f26f",
+    "storage_bucket": "hounorte-8f26f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326772607397:android:ed593d1ca2e043986fc04c",
+        "android_client_info": {
+          "package_name": "com.example.hounorte"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326772607397-mequu18qsctddt3pnn4rljtq8qqr5k7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlL06ORA4KEELJyAc229_ry2zbxI7d9Y4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326772607397-mequu18qsctddt3pnn4rljtq8qqr5k7k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
