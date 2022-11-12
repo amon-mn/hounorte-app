@@ -108,6 +108,7 @@
                 android:layout_height="90dp"
                 android:text="Aqui você pode resolver listas de exercicios com as questões mais cobradas por cada banca, além disso você pode consultar outras informações sobre as suas provas"
                 android:textSize="16sp"
+                android:textColor="@color/black_gray"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -116,8 +117,9 @@
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="24dp"
                 android:text="Vestibulares"
+                android:textColor="@color/black_gray"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -19,9 +19,9 @@ public class VestibularesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_vestibulares, container, false);
 
 
-        return view;
+
+        return inflater.inflate(R.layout.fragment_vestibulares, container, false);
     }
 }
