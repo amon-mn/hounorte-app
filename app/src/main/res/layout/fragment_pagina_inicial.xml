@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFCE5"
-    tools:context=".PaginaInicialFragment">
+    tools:context=".fragments.PaginaInicialFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/container_home"

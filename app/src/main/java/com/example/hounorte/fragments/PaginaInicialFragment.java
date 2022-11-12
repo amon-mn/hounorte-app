@@ -1,4 +1,4 @@
-package com.example.hounorte;
+package com.example.hounorte.fragments;
 
 import android.os.Bundle;
 
@@ -11,12 +11,13 @@ import android.view.ViewGroup;
 import com.example.hounorte.R;
 
 
-public class ListasExerciciosFragment extends Fragment {
+public class PaginaInicialFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_listas_exercicios, container, false);
+        View view = inflater.inflate(R.layout.fragment_pagina_inicial, container, false);
+
+        return view;
     }
 }
