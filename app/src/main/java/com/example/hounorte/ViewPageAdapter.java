@@ -28,12 +28,16 @@ public class ViewPageAdapter extends FragmentStateAdapter {
         {
             fragment = new VestibularesFragment();
         }
+        else if (position == 3)
+        {
+            fragment = new PaginaPerfilFragment();
+        }
         assert fragment != null;
         return fragment;
     }
 
     @Override
     public int getItemCount() {
-        return 3;
+        return 4;
     }
 }

@@ -67,19 +67,19 @@ public class FormCadastro extends AppCompatActivity {
 
                 }
 
-                //Intent intent = new Intent(getApplicationContext(), PaginaInicial.class);
-                //startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), PaginaInicial.class);
+                startActivity(intent);
             }
         });
 
-        /*txt_login.setOnClickListener(new View.OnClickListener() {
+        txt_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent intent = new Intent(getApplicationContext(), FormLogin.class);
                 startActivity(intent);
             }
-        });*/
+        });
 
     };
 
@@ -148,7 +148,7 @@ public class FormCadastro extends AppCompatActivity {
     }
 
     private void IniciarComponentes(){
-        //txt_login = findViewById(R.id.txt_login);
+        txt_login = findViewById(R.id.txt_login);
         edit_nome = findViewById(R.id.edit_nome);
         edit_idade = findViewById(R.id.edit_idade);
         edit_email = findViewById(R.id.edit_email);
