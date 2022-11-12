@@ -49,6 +49,7 @@
                     android:text="Titulo do Assunto"
                     android:textSize="22sp"
                     android:textStyle="bold"
+                    android:textColor="#333333"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.497"
@@ -93,6 +94,7 @@
                 android:text="Exercicio de x de x                        Fonte"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:textColor="#333333"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.263"
                 app:layout_constraintStart_toStartOf="parent"
@@ -103,6 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:textColor="#333333"
                 android:text="TEXTO PARA A QUESTÂO A SEGUIR :"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.104"
@@ -114,6 +117,7 @@
                 android:layout_width="376dp"
                 android:layout_height="139dp"
                 android:layout_marginTop="16dp"
+                android:textColor="#333333"
                 android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus lorem est, at dignissim quam bibendum ut.
 
 Aenean at lorem in augue fermentum auctor non eu purus. Nulla sit amet mi facilisis, commodo quam nec, hendrerit tortor.
@@ -125,6 +129,7 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                 app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
             <GridLayout
+                android:id="@+id/gridLayout_vest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:alignmentMode="alignMargins"
@@ -148,9 +153,20 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="#DBFDBB"
-                        android:gravity="right"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Titulo Assunto 1: "
+                            android:textColor="#333333"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_marginStart="16dp">
+                        </TextView>
+
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -167,9 +183,20 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="#DBFDBB"
-                        android:gravity="right"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Titulo Assunto 2: "
+                            android:textColor="#333333"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_marginStart="16dp">
+                        </TextView>
+
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -186,9 +213,20 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="#DBFDBB"
-                        android:gravity="right"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Titulo Assunto 3: "
+                            android:textColor="#333333"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_marginStart="16dp">
+                        </TextView>
+
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -205,9 +243,20 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="#DBFDBB"
-                        android:gravity="right"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Titulo Assunto 4: "
+                            android:textColor="#333333"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_marginStart="16dp">
+                        </TextView>
+
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -223,21 +272,71 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="right"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:padding="4dp"
                         android:background="#DBFDBB">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Titulo Assunto 5: "
+                            android:textColor="#333333"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_marginStart="16dp">
+
+                        </TextView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
             </GridLayout>
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_responder"
+                android:layout_width="329dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bg_exercicios"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridLayout_vest"
+                android:text="Responder"
+                android:textColor="@color/white">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_anterior"
+                android:layout_width="156dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_exercicios"
+                android:text="Anterior"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/bt_proximo"
+                app:layout_constraintHorizontal_bias="0.052"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bt_responder"></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_proximo"
+                android:layout_width="156dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/bg_exercicios"
+                android:text="Próximo"
+                android:textColor="@color/white"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bt_responder"></androidx.appcompat.widget.AppCompatButton>
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 </androidx.core.widget.NestedScrollView>
 
