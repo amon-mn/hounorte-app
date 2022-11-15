@@ -1,4 +1,4 @@
-package com.example.hounorte;
+package com.example.hounorte.fragments;
 
 import android.os.Bundle;
 
@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.hounorte.R;
 import com.google.android.material.tabs.TabLayout;
 
 public class PaginaPerfilFragment extends Fragment {

@@ -7,6 +7,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.hounorte.fragments.ListasExerciciosFragment;
 import com.example.hounorte.fragments.PaginaInicialFragment;
+import com.example.hounorte.fragments.PaginaPerfilFragment;
 import com.example.hounorte.fragments.VestibularesFragment;
 
 public class ViewPageAdapter extends FragmentStateAdapter {
