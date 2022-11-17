@@ -44,5 +44,15 @@
     <string name="enem">ENEM</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nome_perfil">Henrique Freitas Barkett</string>
+    <string name="nome_pagina_perfil">Henrique Freitas Barkett</string>
+    <string name="aba_infos_perfil">Meus Dados</string>
+    <string name="abas_listas_perfil">Minhas Listas</string>
+    <string name="tv_titulo_nome_perfil">Nome</string>
+    <string name="tv_titulo_email_perfil">Email</string>
+    <string name="email_perfil">2020000511@ifam.edu.br</string>
+    <string name="tv_titulo_senha_perfil">Senha</string>
+    <string name="senha_perfil">SENHA MAIS DIFICIL DE TODAS</string>
+    <string name="tv_logout_perfil">Sair da minha conta</string>
 
 </resources>
