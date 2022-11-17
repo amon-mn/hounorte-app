@@ -67,8 +67,6 @@ public class FormCadastro extends AppCompatActivity {
 
                 }
 
-                Intent intent = new Intent(getApplicationContext(), PaginaInicial.class);
-                startActivity(intent);
             }
         });
 
