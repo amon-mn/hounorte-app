@@ -19,7 +19,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></View>
+            app:layout_constraintTop_toTopOf="parent">
+        </View>
 
 
         <ImageView
@@ -74,14 +75,18 @@
                 android:layout_height="wrap_content"
                 android:text="Meus Dados"
                 tools:layout_editor_absoluteX="17dp"
-                tools:layout_editor_absoluteY="345dp" />
+                tools:layout_editor_absoluteY="345dp">
+
+            </com.google.android.material.tabs.TabItem>
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Minhas Listas"
-                tools:layout_editor_absoluteX="273dp"
-                tools:layout_editor_absoluteY="336dp" />
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="345dp" />
+
+
         </com.google.android.material.tabs.TabLayout>
 
         <androidx.viewpager.widget.ViewPager
@@ -95,88 +100,130 @@
             app:layout_constraintTop_toBottomOf="@+id/tab_layout_perfil"
             app:layout_constraintVertical_bias="0.5" />
 
-        <LinearLayout
+
+        <RelativeLayout
 
             android:id="@+id/linearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="410dp"
+            android:layout_height="346dp"
             android:orientation="vertical"
             android:padding="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/viewpager"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tab_layout_perfil">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/text_name"
+            <TextView
+                android:id="@+id/nome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:hint="Nome">
+                android:layout_marginTop="0dp"
+                android:text="Nome"
+                android:layout_marginStart="16dp"
+                android:textSize="22dp">
+            </TextView>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#FFFCE5"
-                    android:drawableStart="@drawable/ic_person"
-                    android:drawablePadding="10dp"
-                    android:text="Henrique Freitas Barkett" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/text_email"
+            <TextView
+                android:id="@+id/perfil_nome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:hint="Email">
+                android:layout_below="@+id/nome"
+                android:layout_marginStart="16dp"
+                android:text="Henrique Freitas Barkett"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginTop="8dp">
+            </TextView>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#FFFCE5"
-                    android:drawableStart="@drawable/ic_email"
-                    android:drawablePadding="10dp"
-                    android:text="2020000511@ifam.edu.br" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/text_password"
+            <TextView
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:hint="Senha">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#FFFCE5"
-                    android:drawableStart="@drawable/ic_edit"
-                    android:drawablePadding="10dp"
-                    android:text="*************************" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/text_logout"
+                android:layout_below="@+id/perfil_nome"
+                android:layout_marginTop="15dp"
+                android:text="Email"
+                android:textSize="22dp"
+                android:layout_marginStart="16dp">
+            </TextView>
+            <TextView
+                android:id="@+id/perfil_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp">
+                android:layout_below="@+id/email"
+                android:layout_marginTop="5dp"
+                android:text="2020000511@ifam.edu.br"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp">
+            </TextView>
 
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#FFFCE5"
-                    android:drawableStart="@drawable/ic_logout"
-                    android:drawablePadding="10dp"
-                    android:text="Logout" />
+            <TextView
+                android:id="@+id/senha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/perfil_email"
+                android:layout_marginTop="15dp"
+                android:text="Senha"
+                android:textSize="22dp"
+                android:layout_marginStart="16dp">
+            </TextView>
+            <TextView
+                android:id="@+id/perfil_senha"
+                android:inputType="textPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/senha"
+                android:layout_marginTop="5dp"
+                android:text="SENHA MAIS DIFICIL DE TODAS"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp">
+            </TextView>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_senha"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_circle_shape_invisible"
+                app:icon="@drawable/ic_edit"
+                app:iconSize="35dp"
+                android:layout_marginStart="105dp"
+                app:iconTint="@color/green_theme"
+                android:layout_marginTop="168dp"
+                android:layout_toRightOf="@+id/perfil_senha"
+                app:srcCompat="@drawable/ic_logout" />
 
-            </com.google.android.material.textfield.TextInputLayout>
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/perfil_senha"
+                android:layout_marginTop="30dp"
+                android:text="Sair da minha conta"
+                android:textSize="22dp"
+                android:layout_marginStart="16dp">
+            </TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_logout"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_circle_shape_invisible"
+                app:icon="@drawable/ic_logout"
+                app:iconSize="35dp"
+                android:layout_marginStart="60dp"
+                app:iconTint="@color/green_theme"
+                android:layout_marginTop="240dp"
+                android:layout_toRightOf="@+id/logout"
+                app:srcCompat="@drawable/ic_logout" />
+
+
+
+
+
+        </RelativeLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </FrameLayout>
