@@ -54,5 +54,7 @@
     <string name="tv_titulo_senha_perfil">Senha</string>
     <string name="senha_perfil">SENHA MAIS DIFICIL DE TODAS</string>
     <string name="tv_logout_perfil">Sair da minha conta</string>
+    <string name="cv_biologia">Biologia</string>
+    <string name="cv_quimica">Química</string>
 
 </resources>

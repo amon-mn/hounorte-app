@@ -55,7 +55,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="ContentDescription" />
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_search_le"
@@ -71,7 +71,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="ContentDescription" />
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_filter_teste"
@@ -87,7 +87,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/btn_search_le"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="ContentDescription" />
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -141,6 +141,7 @@
                 android:columnCount="2"
                 android:columnOrderPreserved="false"
                 android:rowCount="7"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -168,7 +169,7 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/redacao_icon"
+                            android:src="@drawable/hist_icon"
                             tools:ignore="ContentDescription" />
 
                         <TextView
@@ -176,7 +177,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
                             android:fontFamily="@font/quicksand_bold"
-                            android:text="@string/redacao"
+                            android:text="@string/historia"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp"
                             android:textStyle="normal" />
@@ -206,15 +207,15 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/socio_icon"
-                            tools:ignore="ContentDescription"/>
+                            android:src="@drawable/geo_icon"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
                             android:fontFamily="@font/quicksand_bold"
-                            android:text="Sociologia"
+                            android:text="Geografia"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
 
@@ -244,7 +245,7 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:src="@drawable/hist_icon"
-                            tools:ignore="ContentDescription"/>
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -280,7 +281,7 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/hist_icon"
+                            android:src="@drawable/socio_icon"
                             tools:ignore="ContentDescription" />
 
                         <TextView
@@ -288,44 +289,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
                             android:fontFamily="@font/quicksand_bold"
-                            android:text="@string/historia"
-                            android:textColor="@color/black_gray"
-                            android:textSize="18sp" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="16dp"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="10dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/bg_categories"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/geo_icon"
-                            tools:ignore="ContentDescription"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
-                            android:fontFamily="@font/quicksand_bold"
-                            android:text="@string/geografia"
+                            android:text="Sociologia"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
 
@@ -355,7 +319,7 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:src="@drawable/arts_icon"
-                            tools:ignore="ContentDescription"/>
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -391,45 +355,8 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/linguagens_icon"
-                            tools:ignore="ContentDescription"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
-                            android:fontFamily="@font/quicksand_bold"
-                            android:text="@string/ingles"
-                            android:textColor="@color/black_gray"
-                            android:textSize="18sp" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="16dp"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="10dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/bg_categories"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
                             android:src="@drawable/port_icon"
-                            tools:ignore="ContentDescription"/>
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -466,7 +393,44 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:src="@drawable/linguagens_icon"
-                            tools:ignore="ContentDescription"/>
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:text="@string/ingles"
+                            android:textColor="@color/black_gray"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_categories"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/linguagens_icon"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -502,8 +466,45 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
+                            android:src="@drawable/fisica_icon"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:text="Física"
+                            android:textColor="@color/black_gray"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_categories"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
                             android:src="@drawable/mat_icon"
-                            tools:ignore="ContentDescription"/>
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -540,7 +541,7 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:src="@drawable/quimica_icon"
-                            tools:ignore="ContentDescription"/>
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -577,7 +578,7 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:src="@drawable/bio_icon"
-                            tools:ignore="ContentDescription"/>
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -591,47 +592,6 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="16dp"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="10dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/bg_categories"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/fisica_icon"
-                            tools:ignore="ContentDescription"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
-                            android:fontFamily="@font/quicksand_bold"
-                            android:text="Física"
-                            android:textColor="@color/black_gray"
-                            android:textSize="18sp" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-
-
-
 
             </GridLayout>
 

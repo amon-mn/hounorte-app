@@ -10,9 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.hounorte.Exercicios;
 import com.example.hounorte.R;
 import com.example.hounorte.Vestibular;
+import com.example.hounorte.school.Portugues;
 
 
 public class PaginaInicialFragment extends Fragment {
@@ -22,11 +22,11 @@ public class PaginaInicialFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_pagina_inicial, container, false);
 
-        CardView cv_vest4 = (CardView) view.findViewById(R.id.cv_vest4);
-        CardView cv_disciplina1 = (CardView) view.findViewById(R.id.cv_disciplina1);
+        CardView cv_enem = (CardView) view.findViewById(R.id.cv_enem);
+        CardView cv_portugues = (CardView) view.findViewById(R.id.cv_portugues);
 
 
-        cv_vest4.setOnClickListener(new View.OnClickListener() {
+        cv_enem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent in = new Intent(getActivity(), Vestibular.class);
@@ -34,13 +34,14 @@ public class PaginaInicialFragment extends Fragment {
             }
         });
 
-        cv_disciplina1.setOnClickListener(new View.OnClickListener() {
+        cv_portugues.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(getActivity(), Exercicios.class);
+                Intent in = new Intent(getActivity(), Portugues.class);
                 startActivity(in);
             }
         });
+
 
 
         return view;

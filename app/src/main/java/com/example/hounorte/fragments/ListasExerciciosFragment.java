@@ -3,7 +3,6 @@ package com.example.hounorte.fragments;
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
@@ -11,8 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.hounorte.Exercicios;
 import com.example.hounorte.R;
+import com.example.hounorte.school.Portugues;
 
 
 public class ListasExerciciosFragment extends Fragment {
@@ -29,7 +28,7 @@ public class ListasExerciciosFragment extends Fragment {
         cv_disciplina1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(getActivity(), Exercicios.class);
+                Intent in = new Intent(getActivity(), Portugues.class);
                 startActivity(in);
             }
         });

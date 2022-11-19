@@ -123,7 +123,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView4">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cv_disciplina1"
+                android:id="@+id/cv_portugues"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
@@ -144,7 +144,7 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/redacao_icon"
+                        android:src="@drawable/port_icon"
                         tools:ignore="ContentDescription" />
 
                     <TextView
@@ -152,7 +152,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/quicksand_bold"
-                        android:text="@string/redacao"
+                        android:text="@string/portugues"
                         android:textColor="@color/black_gray"
                         android:textSize="18sp"
                         android:textStyle="normal" />
@@ -162,6 +162,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_matematica"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
@@ -199,6 +200,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_geografia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
@@ -236,6 +238,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_historia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
@@ -273,6 +276,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_biologia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
@@ -293,7 +297,7 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/linguagens_icon"
+                        android:src="@drawable/bio_icon"
                         tools:ignore="ContentDescription"/>
 
                     <TextView
@@ -301,7 +305,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/quicksand_bold"
-                        android:text="@string/ingles"
+                        android:text="@string/cv_biologia"
                         android:textColor="@color/black_gray"
                         android:textSize="18sp" />
 
@@ -310,6 +314,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_quimica"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
@@ -330,7 +335,7 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/port_icon"
+                        android:src="@drawable/quimica_icon"
                         tools:ignore="ContentDescription"/>
 
                     <TextView
@@ -338,7 +343,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/quicksand_bold"
-                        android:text="@string/portugues"
+                        android:text="@string/cv_quimica"
                         android:textColor="@color/black_gray"
                         android:textSize="18sp" />
 
@@ -394,6 +399,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_vestibulares">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_ufam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
@@ -431,6 +437,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_ifam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
@@ -468,6 +475,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_uea"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
@@ -505,7 +513,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cv_vest4"
+                android:id="@+id/cv_enem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"

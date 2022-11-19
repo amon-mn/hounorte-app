@@ -186,17 +186,19 @@
                     android:layout_marginStart="16dp"
                     tools:ignore="TextViewEdits">
                 </TextView>
+
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_senha"
                     android:layout_width="50dp"
                     android:layout_height="30dp"
+                    android:layout_below="@+id/perfil_email"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="33dp"
+                    android:layout_toEndOf="@+id/perfil_senha"
                     android:background="@drawable/btn_circle_shape_invisible"
                     app:icon="@drawable/ic_edit"
                     app:iconSize="35dp"
-                    android:layout_marginStart="105dp"
                     app:iconTint="@color/green_theme"
-                    android:layout_marginTop="168dp"
-                    android:layout_toEndOf="@+id/perfil_senha"
                     app:srcCompat="@drawable/ic_logout" />
 
 
@@ -215,13 +217,14 @@
                     android:id="@+id/btn_logout"
                     android:layout_width="50dp"
                     android:layout_height="30dp"
+                    android:layout_below="@+id/btn_senha"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_toEndOf="@+id/logout"
                     android:background="@drawable/btn_circle_shape_invisible"
                     app:icon="@drawable/ic_logout"
                     app:iconSize="35dp"
-                    android:layout_marginStart="60dp"
                     app:iconTint="@color/green_theme"
-                    android:layout_marginTop="240dp"
-                    android:layout_toEndOf="@+id/logout"
                     app:srcCompat="@drawable/ic_logout" />
 
             </RelativeLayout>
