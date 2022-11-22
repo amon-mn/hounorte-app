@@ -8,7 +8,7 @@
     tools:context=".fragments.VestibularesFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/container_vestibulares"
+        android:id="@+id/portugues_Pagina_Vestibular"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -310,8 +310,9 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                 android:id="@+id/bt_anterior"
                 android:layout_width="156dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="32dp"
                 android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
                 android:background="@drawable/bg_exercicios"
                 android:text="Anterior"
                 android:textColor="@color/white"
@@ -319,21 +320,23 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                 app:layout_constraintEnd_toStartOf="@+id/bt_proximo"
                 app:layout_constraintHorizontal_bias="0.052"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/bt_responder"></androidx.appcompat.widget.AppCompatButton>
+                app:layout_constraintTop_toBottomOf="@+id/bt_responder">
+            </androidx.appcompat.widget.AppCompatButton>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/bt_proximo"
                 android:layout_width="156dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="24dp"
-                android:layout_marginEnd="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="32dp"
                 android:background="@drawable/bg_exercicios"
                 android:text="Próximo"
                 android:textColor="@color/white"
-
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/bt_responder"></androidx.appcompat.widget.AppCompatButton>
+                app:layout_constraintTop_toBottomOf="@id/bt_responder">
+            </androidx.appcompat.widget.AppCompatButton>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

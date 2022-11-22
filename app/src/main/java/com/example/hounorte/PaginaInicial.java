@@ -7,6 +7,8 @@ import androidx.viewpager2.widget.ViewPager2;
 import android.os.Bundle;
 import android.widget.Toolbar;
 
+import com.example.hounorte.R;
+import com.example.hounorte.ViewPageAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.Objects;

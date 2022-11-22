@@ -2,7 +2,6 @@ package com.example.hounorte;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -112,7 +111,7 @@ public class FormLogin extends AppCompatActivity {
     }
 
     private void TelaPrincipal(){
-        Intent intent = new Intent(FormLogin.this,PaginaInicial.class);
+        Intent intent = new Intent(FormLogin.this, PaginaInicial.class);
         startActivity(intent);
         finish();
     }

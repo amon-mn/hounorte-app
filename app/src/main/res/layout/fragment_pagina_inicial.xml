@@ -169,7 +169,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:fontFamily="@font/quicksand_bold"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="@string/portugues"
                         android:textColor="@color/black_gray"
                         android:textSize="18sp"
@@ -208,7 +208,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:fontFamily="@font/quicksand_bold"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="@string/matematica"
                         android:textColor="@color/black_gray"
                         android:textSize="18sp" />
@@ -246,7 +246,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:fontFamily="@font/quicksand_bold"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="@string/geografia"
                         android:textColor="@color/black_gray"
                         android:textSize="18sp" />
@@ -284,7 +284,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:fontFamily="@font/quicksand_bold"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="@string/historia"
                         android:textColor="@color/black_gray"
                         android:textSize="18sp" />
@@ -322,7 +322,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:fontFamily="@font/quicksand_bold"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="@string/cv_biologia"
                         android:textColor="@color/black_gray"
                         android:textSize="18sp" />
@@ -360,7 +360,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:fontFamily="@font/quicksand_bold"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="@string/cv_quimica"
                         android:textColor="@color/black_gray"
                         android:textSize="18sp" />
@@ -445,7 +445,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:fontFamily="@font/quicksand_bold"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="@string/ufam"
                         android:textColor="@color/black_gray"
                         android:textSize="18sp" />
@@ -483,7 +483,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:fontFamily="@font/quicksand_bold"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="@string/ifam"
                         android:textColor="@color/black_gray"
                         android:textSize="18sp" />
@@ -521,7 +521,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:fontFamily="@font/quicksand_bold"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="@string/uea"
                         android:textColor="@color/black_gray"
                         android:textSize="18sp" />
@@ -559,7 +559,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:fontFamily="@font/quicksand_bold"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="@string/enem"
                         android:textColor="@color/black_gray"
                         android:textSize="18sp" />
