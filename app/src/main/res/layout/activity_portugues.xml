@@ -319,7 +319,9 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                 app:layout_constraintEnd_toStartOf="@+id/bt_proximo"
                 app:layout_constraintHorizontal_bias="0.052"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/bt_responder"></androidx.appcompat.widget.AppCompatButton>
+                app:layout_constraintTop_toBottomOf="@+id/bt_responder">
+
+            </androidx.appcompat.widget.AppCompatButton>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/bt_proximo"
@@ -333,7 +335,9 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
 
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/bt_responder"></androidx.appcompat.widget.AppCompatButton>
+                app:layout_constraintTop_toBottomOf="@id/bt_responder">
+
+            </androidx.appcompat.widget.AppCompatButton>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
