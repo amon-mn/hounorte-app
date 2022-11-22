@@ -2,16 +2,11 @@ package com.example.hounorte.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
-
 import com.example.hounorte.R;
 import com.example.hounorte.Vestibular;
 
