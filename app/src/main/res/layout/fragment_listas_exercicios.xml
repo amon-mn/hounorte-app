@@ -176,7 +176,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:fontFamily="@font/quicksand_bold"
+                            android:fontFamily="@font/poppins_bold"
                             android:text="@string/historia"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp"
@@ -214,7 +214,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:fontFamily="@font/quicksand_bold"
+                            android:fontFamily="@font/poppins_bold"
                             android:text="Geografia"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -251,7 +251,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:fontFamily="@font/quicksand_bold"
+                            android:fontFamily="@font/poppins_bold"
                             android:text="Filosofia"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -288,7 +288,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:fontFamily="@font/quicksand_bold"
+                            android:fontFamily="@font/poppins_bold"
                             android:text="Sociologia"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -325,7 +325,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:fontFamily="@font/quicksand_bold"
+                            android:fontFamily="@font/poppins_bold"
                             android:text="Artes"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -362,7 +362,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:fontFamily="@font/quicksand_bold"
+                            android:fontFamily="@font/poppins_bold"
                             android:text="@string/portugues"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -399,7 +399,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:fontFamily="@font/quicksand_bold"
+                            android:fontFamily="@font/poppins_bold"
                             android:text="@string/ingles"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -436,7 +436,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:fontFamily="@font/quicksand_bold"
+                            android:fontFamily="@font/poppins_bold"
                             android:text="Espanhol"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -473,7 +473,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:fontFamily="@font/quicksand_bold"
+                            android:fontFamily="@font/poppins_bold"
                             android:text="Física"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -510,7 +510,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:fontFamily="@font/quicksand_bold"
+                            android:fontFamily="@font/poppins_bold"
                             android:text="@string/matematica"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -547,7 +547,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:fontFamily="@font/quicksand_bold"
+                            android:fontFamily="@font/poppins_bold"
                             android:text="Química"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
@@ -584,7 +584,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:fontFamily="@font/quicksand_bold"
+                            android:fontFamily="@font/poppins_bold"
                             android:text="Biologia"
                             android:textColor="@color/black_gray"
                             android:textSize="18sp" />
