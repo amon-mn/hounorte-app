@@ -54,13 +54,13 @@
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <EditText
-            android:id="@+id/edit_idade"
+            android:id="@+id/edit_sobrenome"
             style="@style/Edit_Text"
             android:layout_marginTop="16dp"
             android:autofillHints=""
-            android:drawableEnd="@drawable/ic_date"
-            android:hint="@string/idade"
-            android:inputType="date"
+            android:drawableEnd="@drawable/ic_person"
+            android:hint="Sobrenome"
+            android:inputType="text"
             app:layout_constraintEnd_toEndOf="@+id/container_components"
             app:layout_constraintStart_toStartOf="@+id/container_components"
             app:layout_constraintTop_toBottomOf="@+id/edit_nome" />
@@ -70,7 +70,7 @@
             style="@style/Edit_Text"
             android:autofillHints="name"
             android:drawableEnd="@drawable/ic_person"
-            android:hint="@string/nome_completo"
+            android:hint="Nome"
             android:inputType="text"
             app:layout_constraintEnd_toEndOf="@+id/container_components"
             app:layout_constraintStart_toStartOf="@+id/container_components"
@@ -85,7 +85,7 @@
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="@+id/container_components"
             app:layout_constraintStart_toStartOf="@+id/container_components"
-            app:layout_constraintTop_toBottomOf="@+id/edit_idade" />
+            app:layout_constraintTop_toBottomOf="@+id/edit_sobrenome"/>
 
         <EditText
             android:id="@+id/edit_senha"
