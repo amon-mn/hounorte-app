@@ -155,16 +155,16 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="right"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:padding="4dp"
                         android:background="@drawable/bg_vestibulares">
 
                         <ImageView
-                            android:layout_width="114dp"
-                            android:layout_height="114dp"
-                            android:layout_marginStart="320dp"
-                            android:src="@drawable/prova_vestibulares"
+                            android:layout_width="296dp"
+                            android:layout_height="116dp"
+                            android:layout_marginStart="0dp"
+                            android:src="@drawable/ifam_vestibulares"
                             tools:ignore="ContentDescription">
                         </ImageView>
 
@@ -183,16 +183,16 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="right"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:padding="4dp"
                         android:background="@drawable/bg_vestibulares">
 
                         <ImageView
-                            android:layout_width="114dp"
-                            android:layout_height="114dp"
-                            android:layout_marginStart="320dp"
-                            android:src="@drawable/prova_vestibulares"
+                            android:layout_width="296dp"
+                            android:layout_height="116dp"
+                            android:layout_marginStart="0dp"
+                            android:src="@drawable/macro_vestibulares"
                             tools:ignore="ContentDescription">
                         </ImageView>
 
@@ -211,16 +211,16 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="right"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:padding="4dp"
                         android:background="@drawable/bg_vestibulares">
 
                         <ImageView
-                            android:layout_width="114dp"
-                            android:layout_height="114dp"
-                            android:layout_marginStart="320dp"
-                            android:src="@drawable/prova_vestibulares"
+                            android:layout_width="296dp"
+                            android:layout_height="116dp"
+                            android:layout_marginStart="0dp"
+                            android:src="@drawable/enem_vestibulares"
                             tools:ignore="ContentDescription">
                         </ImageView>
 
@@ -239,16 +239,16 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="right"
+                    android:gravity="center"
                     android:orientation="horizontal"
                     android:padding="4dp"
                     android:background="@drawable/bg_vestibulares">
 
                     <ImageView
-                        android:layout_width="114dp"
-                        android:layout_height="114dp"
-                        android:layout_marginStart="320dp"
-                        android:src="@drawable/prova_vestibulares"
+                        android:layout_width="296dp"
+                        android:layout_height="116dp"
+                        android:layout_marginStart="0dp"
+                        android:src="@drawable/psc_vestibulares"
                         tools:ignore="ContentDescription">
                     </ImageView>
 
@@ -267,49 +267,23 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="right"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:padding="4dp"
                         android:background="@drawable/bg_vestibulares">
 
                         <ImageView
-                            android:layout_width="114dp"
-                            android:layout_height="114dp"
-                            android:layout_marginStart="320dp"
-                            android:src="@drawable/prova_vestibulares"
+                            android:layout_width="296dp"
+                            android:layout_height="116dp"
+                            android:layout_marginStart="0dp"
+                            android:src="@drawable/sis_vestibulares"
                             tools:ignore="ContentDescription">
                         </ImageView>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="120dp"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="16dp"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="10dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="right"
-                        android:orientation="horizontal"
-                        android:padding="4dp"
-                        android:background="@drawable/bg_vestibulares">
-
-                        <ImageView
-                            android:layout_width="114dp"
-                            android:layout_height="114dp"
-                            android:layout_marginStart="320dp"
-                            android:src="@drawable/prova_vestibulares"
-                            tools:ignore="ContentDescription">
-                        </ImageView>
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
             </GridLayout>
 

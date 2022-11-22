@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import com.example.hounorte.R;
 import com.example.hounorte.Vestibular;
 import com.example.hounorte.school.Portugues;
+import com.example.hounorte.vestibulares.Enem;
 
 
 public class PaginaInicialFragment extends Fragment {
@@ -29,7 +30,7 @@ public class PaginaInicialFragment extends Fragment {
         cv_enem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(getActivity(), Vestibular.class);
+                Intent in = new Intent(getActivity(), Enem.class);
                 startActivity(in);
             }
         });
