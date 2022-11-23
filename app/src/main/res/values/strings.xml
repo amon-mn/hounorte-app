@@ -56,5 +56,6 @@
     <string name="tv_logout_perfil">Sair da minha conta</string>
     <string name="cv_biologia">Biologia</string>
     <string name="cv_quimica">Química</string>
+    <string name="lorem_ipsum_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus lorem est, at dignissim quam bibendum ut. Aenean at lorem in augue fermentum auctor non eu purus. Nulla sit amet mi facilisis, commodo quam nec, hendrerit tortor. Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sollicitudin sem vitae, tincidunt massa. Fusce vulputate tortor et cursus mollis.</string>
 
 </resources>

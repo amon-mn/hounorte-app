@@ -13,21 +13,28 @@
         android:theme="@style/Theme.Hounorte"
         tools:targetApi="31">
         <activity
-            android:name=".vestibulares.Ufam"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".vestibulares.Uea"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".vestibulares.Ifam"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".vestibulares.Psc"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".vestibulares.Macro"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".vestibulares.Sis"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -138,7 +145,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".Exercicios"
             android:exported="false">

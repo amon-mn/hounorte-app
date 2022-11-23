@@ -8,23 +8,23 @@ import com.google.android.material.button.MaterialButton;
 
 public class Portugues extends AppCompatActivity {
 
-    private MaterialButton setaVoltar;
+    private MaterialButton backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_portugues);
-        IniciarComponentes();
+        InitComponents();
 
-        setaVoltar.setOnClickListener(new View.OnClickListener() {
+        backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
             }
         });
     }
-    private void IniciarComponentes(){
-        setaVoltar = findViewById(R.id.btn_back_quiz);
+    private void InitComponents(){
+        backButton = findViewById(R.id.btn_back_quiz);
     }
 
 

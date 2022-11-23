@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFFCE5"
-    tools:context=".fragments.VestibularesFragment">
+    tools:context=".school.Portugues">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/portugues_Pagina_Vestibular"
@@ -92,9 +92,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:text="Exercicio de x de x                        Fonte"
+                android:textColor="#333333"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="#333333"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.263"
                 app:layout_constraintStart_toStartOf="parent"
@@ -105,8 +105,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:textColor="#333333"
                 android:text="TEXTO PARA A QUESTÂO A SEGUIR :"
+                android:textColor="#333333"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.104"
                 app:layout_constraintStart_toStartOf="parent"
@@ -114,17 +114,16 @@
 
             <TextView
                 android:id="@+id/textView10"
-                android:layout_width="376dp"
-                android:layout_height="139dp"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+
+                android:text="@string/lorem_ipsum_description"
                 android:textColor="#333333"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus lorem est, at dignissim quam bibendum ut.
-
-Aenean at lorem in augue fermentum auctor non eu purus. Nulla sit amet mi facilisis, commodo quam nec, hendrerit tortor.
-
-Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sollicitudin sem vitae, tincidunt massa. Fusce vulputate tortor et cursus mollis. "
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.542"
+                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
@@ -160,12 +159,11 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
                             android:text="a) "
                             android:textColor="#333333"
-                            android:textStyle="bold"
                             android:textSize="18sp"
-                            android:layout_marginStart="16dp">
-                        </TextView>
+                            android:textStyle="bold"></TextView>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -190,12 +188,11 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
                             android:text="b) "
                             android:textColor="#333333"
-                            android:textStyle="bold"
                             android:textSize="18sp"
-                            android:layout_marginStart="16dp">
-                        </TextView>
+                            android:textStyle="bold"></TextView>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -220,12 +217,11 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
                             android:text="c) "
                             android:textColor="#333333"
-                            android:textStyle="bold"
                             android:textSize="18sp"
-                            android:layout_marginStart="16dp">
-                        </TextView>
+                            android:textStyle="bold"></TextView>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -250,12 +246,11 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
                             android:text="d) "
                             android:textColor="#333333"
-                            android:textStyle="bold"
                             android:textSize="18sp"
-                            android:layout_marginStart="16dp">
-                        </TextView>
+                            android:textStyle="bold"></TextView>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -272,19 +267,19 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="#DBFDBB"
                         android:gravity="center"
                         android:orientation="horizontal"
-                        android:padding="4dp"
-                        android:background="#DBFDBB">
+                        android:padding="4dp">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
                             android:text="e) "
                             android:textColor="#333333"
-                            android:textStyle="bold"
                             android:textSize="18sp"
-                            android:layout_marginStart="16dp">
+                            android:textStyle="bold">
 
                         </TextView>
                     </LinearLayout>
@@ -298,11 +293,11 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                 android:layout_height="56dp"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/bg_exercicios"
+                android:text="Responder"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/gridLayout_vest"
-                android:text="Responder"
-                android:textColor="@color/white">
+                app:layout_constraintTop_toBottomOf="@+id/gridLayout_vest">
 
             </androidx.appcompat.widget.AppCompatButton>
 
@@ -320,23 +315,21 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                 app:layout_constraintEnd_toStartOf="@+id/bt_proximo"
                 app:layout_constraintHorizontal_bias="0.052"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/bt_responder">
-            </androidx.appcompat.widget.AppCompatButton>
+                app:layout_constraintTop_toBottomOf="@+id/bt_responder"></androidx.appcompat.widget.AppCompatButton>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/bt_proximo"
                 android:layout_width="156dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="24dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/bg_exercicios"
                 android:text="Próximo"
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/bt_responder">
-            </androidx.appcompat.widget.AppCompatButton>
+                app:layout_constraintTop_toBottomOf="@id/bt_responder"></androidx.appcompat.widget.AppCompatButton>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

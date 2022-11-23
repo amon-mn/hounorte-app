@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFCE5"
-    tools:context=".Vestibular">
+    tools:context=".vestibulares.Ifam">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/ifam_vestibular"
+        android:id="@+id/uea_vestibular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -45,7 +45,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="32dp"
-                    android:text="IFAM"
+                    android:text="Processo Seletivo (IFAM)"
                     android:textSize="22sp"
                     android:textStyle="bold"
                     android:textColor="@color/black_gray"
@@ -232,7 +232,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="44dp"
-                android:text="Provas Anteriores:"
+                android:text="Provas Disponíveis:"
                 android:textColor="#333333"
                 android:textSize="20sp"
                 android:textStyle="bold"
