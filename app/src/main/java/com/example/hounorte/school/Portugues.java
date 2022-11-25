@@ -1,10 +1,17 @@
 package com.example.hounorte.school;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import com.example.hounorte.R;
 import com.google.android.material.button.MaterialButton;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 
 public class Portugues extends AppCompatActivity {
 
@@ -25,7 +32,9 @@ public class Portugues extends AppCompatActivity {
     }
     private void IniciarComponentes(){
         setaVoltar = findViewById(R.id.btn_back_quiz);
+
     }
+
 
 
 
