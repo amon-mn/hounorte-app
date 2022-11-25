@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.hounorte.R;
-import com.example.hounorte.Vestibular;
 import com.example.hounorte.school.Biologia;
 import com.example.hounorte.school.Geografia;
 import com.example.hounorte.school.Historia;

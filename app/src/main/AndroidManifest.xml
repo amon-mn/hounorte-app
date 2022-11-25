@@ -160,13 +160,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Vestibular"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".BoasVindas"
             android:exported="true">
             <intent-filter>

@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.example.hounorte.R;
-import com.example.hounorte.Vestibular;
 import com.example.hounorte.vestibulares.Enem;
 import com.example.hounorte.vestibulares.Ifam;
 import com.example.hounorte.vestibulares.Macro;

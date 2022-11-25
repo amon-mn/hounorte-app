@@ -137,6 +137,7 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                 android:columnOrderPreserved="false"
                 android:rowCount="5"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView10">
 
@@ -160,12 +161,11 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
                             android:text="a) "
                             android:textColor="#333333"
-                            android:textStyle="bold"
                             android:textSize="18sp"
-                            android:layout_marginStart="16dp">
-                        </TextView>
+                            android:textStyle="bold"></TextView>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -190,12 +190,11 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
                             android:text="b) "
                             android:textColor="#333333"
-                            android:textStyle="bold"
                             android:textSize="18sp"
-                            android:layout_marginStart="16dp">
-                        </TextView>
+                            android:textStyle="bold"></TextView>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -220,12 +219,11 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
                             android:text="c) "
                             android:textColor="#333333"
-                            android:textStyle="bold"
                             android:textSize="18sp"
-                            android:layout_marginStart="16dp">
-                        </TextView>
+                            android:textStyle="bold"></TextView>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -250,12 +248,11 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
                             android:text="d) "
                             android:textColor="#333333"
-                            android:textStyle="bold"
                             android:textSize="18sp"
-                            android:layout_marginStart="16dp">
-                        </TextView>
+                            android:textStyle="bold"></TextView>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -272,19 +269,19 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="#DBFDBB"
                         android:gravity="center"
                         android:orientation="horizontal"
-                        android:padding="4dp"
-                        android:background="#DBFDBB">
+                        android:padding="4dp">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
                             android:text="e) "
                             android:textColor="#333333"
-                            android:textStyle="bold"
                             android:textSize="18sp"
-                            android:layout_marginStart="16dp">
+                            android:textStyle="bold">
 
                         </TextView>
                     </LinearLayout>
