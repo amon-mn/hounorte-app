@@ -3,12 +3,14 @@ package com.example.hounorte.fragments;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.hounorte.R;
 import com.example.hounorte.school.Biologia;
@@ -21,14 +23,26 @@ import com.example.hounorte.vestibulares.Enem;
 import com.example.hounorte.vestibulares.Macro;
 import com.example.hounorte.vestibulares.Psc;
 import com.example.hounorte.vestibulares.Sis;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 
 
 public class PaginaInicialFragment extends Fragment {
+
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private TextView nomeUsuario;
+    String usuarioNome;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_pagina_inicial, container, false);
+        nomeUsuario = view.findViewById(R.id.nomeTelaInicial);
 
         CardView cv_historia, cv_geografia, cv_portugues, cv_matematica, cv_quimica, cv_biologia;
 
@@ -125,7 +139,24 @@ public class PaginaInicialFragment extends Fragment {
                 startActivity(in4);
             }
         });
-
         return view;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        usuarioNome = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+        DocumentReference documentReference = db.collection("Usuarios").document(usuarioNome);
+        documentReference.addSnapshotListener(new EventListener<DocumentSnapshot>() {
+            @Override
+            public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
+                if (documentSnapshot != null){
+                    nomeUsuario.setText(documentSnapshot.getString("nome"));
+                }
+            }
+        });
+
     }
 }
