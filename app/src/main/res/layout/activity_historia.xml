@@ -174,11 +174,11 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                         </TextView>
 
                         <TextView
-                            android:id="@+id/tv_alt1"
+                            android:id="@+id/alt1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
-                            android:text=""
+                            android:text="oi henrique"
                             android:textColor="#333333"
                             android:textSize="18sp"
                             android:textStyle="bold">
@@ -219,7 +219,7 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                         </TextView>
 
                         <TextView
-                            android:id="@+id/tv_alt2"
+                            android:id="@+id/alt2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
@@ -265,7 +265,7 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                         </TextView>
 
                         <TextView
-                            android:id="@+id/tv_alt3"
+                            android:id="@+id/alt3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
@@ -311,7 +311,7 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                         </TextView>
 
                         <TextView
-                            android:id="@+id/tv_alt4"
+                            android:id="@+id/alt4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
@@ -355,7 +355,7 @@ Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sol
                         </TextView>
 
                         <TextView
-                            android:id="@+id/tv_alt5"
+                            android:id="@+id/alt5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"

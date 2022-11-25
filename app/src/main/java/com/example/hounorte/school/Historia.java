@@ -36,6 +36,7 @@ public class Historia extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_historia);
         InitComponents();
+        updateQuestion();
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,16 +45,11 @@ public class Historia extends AppCompatActivity {
             }
         });
 
-
-
     }
 
     private void updateQuestion(){
         total++;
         if(total>2){
-
-
-
         }
         else{
 
@@ -65,16 +61,16 @@ public class Historia extends AppCompatActivity {
 
                     assert question != null;
                     quest.setText(question.getQuestion());
-                    alt1.setText(question.getOp1());
-                    alt2.setText(question.getOp2());
-                    alt3.setText(question.getOp3());
-                    alt4.setText(question.getOp4());
-                    alt5.setText(question.getOp5());
+                    alt1.setText(question.getAlt1());
+                    alt2.setText(question.getAlt2());
+                    alt3.setText(question.getAlt3());
+                    alt4.setText(question.getAlt4());
+                    alt5.setText(question.getAlt5());
 
                     bg_alt1.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            if(alt1.getText().toString().equals(question.getAnsw())){
+                            if(alt1.getText().toString().equals(question.getAnswer())){
                                 bg_alt1.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
@@ -92,22 +88,22 @@ public class Historia extends AppCompatActivity {
                                 wrong++;
                                 bg_alt1.setBackgroundColor(Color.parseColor("#F42B15")); //RED
 
-                                if (alt2.getText().toString().equals(question.getAnsw())){
+                                if (alt2.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt2.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
                                 }
-                                else if(alt3.getText().toString().equals(question.getAnsw())){
+                                else if(alt3.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt3.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
                                 }
-                                else if(alt4.getText().toString().equals(question.getAnsw())){
+                                else if(alt4.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt4.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
                                 }
-                                else if(alt5.getText().toString().equals(question.getAnsw())){
+                                else if(alt5.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt5.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
@@ -134,7 +130,7 @@ public class Historia extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
 
-                            if(alt2.getText().toString().equals(question.getAnsw())){
+                            if(alt2.getText().toString().equals(question.getAnswer())){
                                 bg_alt2.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
@@ -152,22 +148,22 @@ public class Historia extends AppCompatActivity {
                                 wrong++;
                                 bg_alt2.setBackgroundColor(Color.parseColor("#F42B15")); //RED
 
-                                if (alt1.getText().toString().equals(question.getAnsw())){
+                                if (alt1.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt1.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
                                 }
-                                else if(alt3.getText().toString().equals(question.getAnsw())){
+                                else if(alt3.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt3.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
                                 }
-                                else if(alt4.getText().toString().equals(question.getAnsw())){
+                                else if(alt4.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt4.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
                                 }
-                                else if(alt5.getText().toString().equals(question.getAnsw())){
+                                else if(alt5.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt5.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
@@ -187,8 +183,6 @@ public class Historia extends AppCompatActivity {
 
                             }
 
-
-
                         }
                     });
 
@@ -196,7 +190,7 @@ public class Historia extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
 
-                            if(alt3.getText().toString().equals(question.getAnsw())){
+                            if(alt3.getText().toString().equals(question.getAnswer())){
                                 bg_alt3.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
@@ -214,22 +208,22 @@ public class Historia extends AppCompatActivity {
                                 wrong++;
                                 bg_alt3.setBackgroundColor(Color.parseColor("#F42B15")); //RED
 
-                                if (alt1.getText().toString().equals(question.getAnsw())){
+                                if (alt1.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt1.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
                                 }
-                                else if(alt2.getText().toString().equals(question.getAnsw())){
+                                else if(alt2.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt2.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
                                 }
-                                else if(alt4.getText().toString().equals(question.getAnsw())){
+                                else if(alt4.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt4.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
                                 }
-                                else if(alt5.getText().toString().equals(question.getAnsw())){
+                                else if(alt5.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt5.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
@@ -256,7 +250,7 @@ public class Historia extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
 
-                            if(alt4.getText().toString().equals(question.getAnsw())){
+                            if(alt4.getText().toString().equals(question.getAnswer())){
                                 bg_alt4.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
@@ -274,22 +268,22 @@ public class Historia extends AppCompatActivity {
                                 wrong++;
                                 bg_alt4.setBackgroundColor(Color.parseColor("#F42B15")); //RED
 
-                                if (alt1.getText().toString().equals(question.getAnsw())){
+                                if (alt1.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt1.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
                                 }
-                                else if(alt2.getText().toString().equals(question.getAnsw())){
+                                else if(alt2.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt2.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
                                 }
-                                else if(alt3.getText().toString().equals(question.getAnsw())){
+                                else if(alt3.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt3.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
                                 }
-                                else if(alt5.getText().toString().equals(question.getAnsw())){
+                                else if(alt5.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt5.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
@@ -316,7 +310,7 @@ public class Historia extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
 
-                            if(alt5.getText().toString().equals(question.getAnsw())){
+                            if(alt5.getText().toString().equals(question.getAnswer())){
                                 bg_alt5.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
@@ -334,22 +328,22 @@ public class Historia extends AppCompatActivity {
                                 wrong++;
                                 bg_alt5.setBackgroundColor(Color.parseColor("#F42B15")); //RED
 
-                                if (alt1.getText().toString().equals(question.getAnsw())){
+                                if (alt1.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt1.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
                                 }
-                                else if(alt2.getText().toString().equals(question.getAnsw())){
+                                else if(alt2.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt2.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
                                 }
-                                else if(alt3.getText().toString().equals(question.getAnsw())){
+                                else if(alt3.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt3.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
                                 }
-                                else if(alt4.getText().toString().equals(question.getAnsw())){
+                                else if(alt4.getText().toString().equals(question.getAnswer())){
 
                                     bg_alt4.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
 
@@ -383,19 +377,15 @@ public class Historia extends AppCompatActivity {
         }
     }
 
-
-
-
-
     private void InitComponents(){
         backButton = (MaterialButton) findViewById(R.id.btn_back_quiz);
         quest = (TextView) findViewById(R.id.question);
 
-        alt1 = (TextView) findViewById(R.id.tv_alt1);
-        alt2 = (TextView) findViewById(R.id.tv_alt2);
-        alt3 = (TextView) findViewById(R.id.tv_alt3);
-        alt4 = (TextView) findViewById(R.id.tv_alt4);
-        alt5 = (TextView) findViewById(R.id.tv_alt5);
+        alt1 = (TextView) findViewById(R.id.alt1);
+        alt2 = (TextView) findViewById(R.id.alt2);
+        alt3 = (TextView) findViewById(R.id.alt3);
+        alt4 = (TextView) findViewById(R.id.alt4);
+        alt5 = (TextView) findViewById(R.id.alt5);
 
         bg_alt1 = (CardView) findViewById(R.id.cv_alt1);
         bg_alt2 = (CardView) findViewById(R.id.cv_alt2);

@@ -1,16 +1,20 @@
 package com.example.hounorte.model;
 
 public class Question {
-    public String question, op1, op2, op3, op4, op5, answ;
+    public String question, alt1, alt2, alt3, alt4, alt5, answer;
 
-    public Question(String question, String op1, String op2, String op3, String op4, String op5, String answ) {
+    public Question(String question, String alt1, String alt2, String alt3, String alt4, String alt5, String answer) {
         this.question = question;
-        this.op1 = op1;
-        this.op2 = op2;
-        this.op3 = op3;
-        this.op4 = op4;
-        this.op5 = op5;
-        this.answ = answ;
+        this.alt1 = alt1;
+        this.alt2 = alt2;
+        this.alt3 = alt3;
+        this.alt4 = alt4;
+        this.alt5 = alt5;
+        this.answer = answer;
+    }
+
+    public Question(){
+
     }
 
     public String getQuestion() {
@@ -21,51 +25,51 @@ public class Question {
         this.question = question;
     }
 
-    public String getOp1() {
-        return op1;
+    public String getAlt1() {
+        return alt1;
     }
 
-    public void setOp1(String op1) {
-        this.op1 = op1;
+    public void setAlt1(String alt1) {
+        this.alt1 = alt1;
     }
 
-    public String getOp2() {
-        return op2;
+    public String getAlt2() {
+        return alt2;
     }
 
-    public void setOp2(String op2) {
-        this.op2 = op2;
+    public void setAlt2(String alt2) {
+        this.alt2 = alt2;
     }
 
-    public String getOp3() {
-        return op3;
+    public String getAlt3() {
+        return alt3;
     }
 
-    public void setOp3(String op3) {
-        this.op3 = op3;
+    public void setAlt3(String alt3) {
+        this.alt3 = alt3;
     }
 
-    public String getOp4() {
-        return op4;
+    public String getAlt4() {
+        return alt4;
     }
 
-    public void setOp4(String op4) {
-        this.op4 = op4;
+    public void setAlt4(String alt4) {
+        this.alt4 = alt4;
     }
 
-    public String getOp5() {
-        return op5;
+    public String getAlt5() {
+        return alt5;
     }
 
-    public void setOp5(String op5) {
-        this.op5 = op5;
+    public void setAlt5(String alt5) {
+        this.alt5 = alt5;
     }
 
-    public String getAnsw() {
-        return answ;
+    public String getAnswer() {
+        return answer;
     }
 
-    public void setAnsw(String answ) {
-        this.answ = answ;
+    public void setAnswer(String answer) {
+        this.answer = answer;
     }
 }

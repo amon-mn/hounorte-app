@@ -57,6 +57,8 @@ public class PaginaPerfilFragment extends Fragment {
     }
 
 
+
+
     @Override
     public void onStart() {
         super.onStart();
