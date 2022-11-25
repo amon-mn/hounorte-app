@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFFCE5"
-    tools:context=".fragments.VestibularesFragment">
+    tools:context=".school.Artes">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/artes_Pagina_Vestibular"

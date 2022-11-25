@@ -417,7 +417,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_vestibulares">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cv_ufam"
+                android:id="@+id/cv_psc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
@@ -446,7 +446,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/poppins_bold"
-                        android:text="@string/ufam"
+                        android:text="PSC"
                         android:textColor="@color/black_gray"
                         android:textSize="18sp" />
 
@@ -455,7 +455,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cv_ifam"
+                android:id="@+id/cv_sis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
@@ -476,7 +476,7 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/ifam_logo"
+                        android:src="@drawable/ufam_logo"
                         tools:ignore="ContentDescription" />
 
                     <TextView
@@ -484,7 +484,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/poppins_bold"
-                        android:text="@string/ifam"
+                        android:text="SIS"
                         android:textColor="@color/black_gray"
                         android:textSize="18sp" />
 
@@ -493,7 +493,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cv_uea"
+                android:id="@+id/cv_macro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
@@ -522,7 +522,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/poppins_bold"
-                        android:text="@string/uea"
+                        android:text="MACRO"
                         android:textColor="@color/black_gray"
                         android:textSize="18sp" />
 
@@ -552,7 +552,7 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/enem_logo"
+                        android:src="@drawable/enem_logo_2"
                         tools:ignore="ContentDescription" />
 
                     <TextView

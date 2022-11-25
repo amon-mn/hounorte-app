@@ -1,4 +1,4 @@
-package com.example.hounorte.school;
+package com.example.hounorte.vestibulares;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,13 +8,13 @@ import android.view.View;
 import com.example.hounorte.R;
 import com.google.android.material.button.MaterialButton;
 
-public class Matematica extends AppCompatActivity {
+public class Sis extends AppCompatActivity {
 
     private MaterialButton backButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_matematica);
+        setContentView(R.layout.activity_sis);
         InitComponents();
 
         backButton.setOnClickListener(new View.OnClickListener() {
@@ -23,10 +23,8 @@ public class Matematica extends AppCompatActivity {
                 onBackPressed();
             }
         });
-
     }
-
     private void InitComponents(){
-        backButton = findViewById(R.id.btn_back_quiz);
+        backButton = findViewById(R.id.btn_back_vstb);
     }
 }
