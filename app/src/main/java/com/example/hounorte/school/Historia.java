@@ -109,16 +109,13 @@ public class Historia extends AppCompatActivity {
 
                                 }
                                 Handler handler = new Handler();
-                                handler.postDelayed(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        bg_alt1.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt2.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt3.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt4.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt5.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        updateQuestion();
-                                    }
+                                handler.postDelayed(() -> {
+                                    bg_alt1.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
+                                    bg_alt2.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
+                                    bg_alt3.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
+                                    bg_alt4.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
+                                    bg_alt5.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
+                                    updateQuestion();
                                 },1500);
 
                             }
@@ -139,7 +136,6 @@ public class Historia extends AppCompatActivity {
                                         Toast.makeText(getApplicationContext(), "Corret", Toast.LENGTH_SHORT).show();
                                         correct++;
                                         bg_alt2.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-
                                     }
                                 },1500);
                             }
@@ -379,7 +375,7 @@ public class Historia extends AppCompatActivity {
 
     private void InitComponents(){
         backButton = (MaterialButton) findViewById(R.id.btn_back_quiz);
-        quest = (TextView) findViewById(R.id.question);
+        quest = findViewById(R.id.question);
 
         alt1 = (TextView) findViewById(R.id.alt1);
         alt2 = (TextView) findViewById(R.id.alt2);
