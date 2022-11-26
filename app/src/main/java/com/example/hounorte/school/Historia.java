@@ -2,9 +2,12 @@ package com.example.hounorte.school;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.cardview.widget.CardView;
 
+import android.annotation.SuppressLint;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -25,8 +28,10 @@ import com.google.firebase.database.ValueEventListener;
 public class Historia extends AppCompatActivity {
 
     private MaterialButton backButton;
-    private TextView quest, alt1, alt2, alt3, alt4, alt5;
-    private CardView bg_alt1, bg_alt2, bg_alt3, bg_alt4, bg_alt5;
+    private TextView quest;
+    private AppCompatButton alt1, alt2, alt3, alt4, alt5;
+
+
     int correct = 0, wrong = 0, total = -1;
     DatabaseReference reference;
 
@@ -67,18 +72,18 @@ public class Historia extends AppCompatActivity {
                     alt4.setText(question.getAlt4());
                     alt5.setText(question.getAlt5());
 
-                    bg_alt1.setOnClickListener(new View.OnClickListener() {
+                    alt1.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
                             if(alt1.getText().toString().equals(question.getAnswer())){
-                                bg_alt1.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                alt1.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
                                         Toast.makeText(getApplicationContext(), "Corret", Toast.LENGTH_SHORT).show();
                                         correct++;
-                                        bg_alt1.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
+                                        alt1.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
 
                                     }
                                 },1500);
@@ -86,37 +91,37 @@ public class Historia extends AppCompatActivity {
                             else{
                                 Toast.makeText(getApplicationContext(), "Incorret", Toast.LENGTH_SHORT).show();
                                 wrong++;
-                                bg_alt1.setBackgroundColor(Color.parseColor("#F42B15")); //RED
+                                alt1.setBackgroundResource(R.drawable.bg_incorrect_alternatives); //RED
 
                                 if (alt2.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt2.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt2.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 else if(alt3.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt3.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt3.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 else if(alt4.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt4.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt4.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 else if(alt5.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt5.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt5.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        bg_alt1.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt2.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt3.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt4.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt5.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
+                                        alt1.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt2.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt3.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt4.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt5.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
                                         updateQuestion();
                                     }
                                 },1500);
@@ -124,21 +129,21 @@ public class Historia extends AppCompatActivity {
                             }
                         }
                     });
+                    updateQuestion();
 
-
-                    bg_alt2.setOnClickListener(new View.OnClickListener() {
+                    alt2.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
 
                             if(alt2.getText().toString().equals(question.getAnswer())){
-                                bg_alt2.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                alt2.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
                                         Toast.makeText(getApplicationContext(), "Corret", Toast.LENGTH_SHORT).show();
                                         correct++;
-                                        bg_alt2.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
+                                        alt2.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
 
                                     }
                                 },1500);
@@ -146,37 +151,37 @@ public class Historia extends AppCompatActivity {
                             else{
                                 Toast.makeText(getApplicationContext(), "Incorret", Toast.LENGTH_SHORT).show();
                                 wrong++;
-                                bg_alt2.setBackgroundColor(Color.parseColor("#F42B15")); //RED
+                                alt2.setBackgroundResource(R.drawable.bg_incorrect_alternatives); //RED
 
                                 if (alt1.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt1.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt1.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 else if(alt3.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt3.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt3.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 else if(alt4.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt4.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt4.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 else if(alt5.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt5.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt5.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        bg_alt1.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt2.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt3.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt4.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt5.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
+                                        alt1.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt2.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt3.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt4.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt5.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
                                         updateQuestion();
                                     }
                                 },1500);
@@ -186,19 +191,19 @@ public class Historia extends AppCompatActivity {
                         }
                     });
 
-                    bg_alt3.setOnClickListener(new View.OnClickListener() {
+                    alt3.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
 
                             if(alt3.getText().toString().equals(question.getAnswer())){
-                                bg_alt3.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                alt3.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
                                         Toast.makeText(getApplicationContext(), "Corret", Toast.LENGTH_SHORT).show();
                                         correct++;
-                                        bg_alt3.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
+                                        alt3.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
 
                                     }
                                 },1500);
@@ -206,37 +211,37 @@ public class Historia extends AppCompatActivity {
                             else{
                                 Toast.makeText(getApplicationContext(), "Incorret", Toast.LENGTH_SHORT).show();
                                 wrong++;
-                                bg_alt3.setBackgroundColor(Color.parseColor("#F42B15")); //RED
+                                alt3.setBackgroundResource(R.drawable.bg_incorrect_alternatives); //RED
 
                                 if (alt1.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt1.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt1.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 else if(alt2.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt2.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt2.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 else if(alt4.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt4.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt4.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 else if(alt5.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt5.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt5.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        bg_alt1.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt2.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt3.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt4.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt5.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
+                                        alt1.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt2.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt3.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt4.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt5.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
                                         updateQuestion();
                                     }
                                 },1500);
@@ -246,19 +251,19 @@ public class Historia extends AppCompatActivity {
                         }
                     });
 
-                    bg_alt4.setOnClickListener(new View.OnClickListener() {
+                    alt4.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
 
                             if(alt4.getText().toString().equals(question.getAnswer())){
-                                bg_alt4.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                alt4.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
                                         Toast.makeText(getApplicationContext(), "Corret", Toast.LENGTH_SHORT).show();
                                         correct++;
-                                        bg_alt4.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
+                                        alt4.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
 
                                     }
                                 },1500);
@@ -266,37 +271,37 @@ public class Historia extends AppCompatActivity {
                             else{
                                 Toast.makeText(getApplicationContext(), "Incorret", Toast.LENGTH_SHORT).show();
                                 wrong++;
-                                bg_alt4.setBackgroundColor(Color.parseColor("#F42B15")); //RED
+                                alt4.setBackgroundResource(R.drawable.bg_incorrect_alternatives); //RED
 
                                 if (alt1.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt1.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt1.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 else if(alt2.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt2.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt2.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 else if(alt3.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt3.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt3.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 else if(alt5.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt5.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt5.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        bg_alt1.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt2.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt3.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt4.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt5.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
+                                        alt1.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt2.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt3.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt4.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt5.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
                                         updateQuestion();
                                     }
                                 },1500);
@@ -306,19 +311,19 @@ public class Historia extends AppCompatActivity {
                         }
                     });
 
-                    bg_alt5.setOnClickListener(new View.OnClickListener() {
+                    alt5.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
 
                             if(alt5.getText().toString().equals(question.getAnswer())){
-                                bg_alt5.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                alt5.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
                                         Toast.makeText(getApplicationContext(), "Corret", Toast.LENGTH_SHORT).show();
                                         correct++;
-                                        bg_alt5.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
+                                        alt5.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
 
                                     }
                                 },1500);
@@ -326,37 +331,37 @@ public class Historia extends AppCompatActivity {
                             else{
                                 Toast.makeText(getApplicationContext(), "Incorret", Toast.LENGTH_SHORT).show();
                                 wrong++;
-                                bg_alt5.setBackgroundColor(Color.parseColor("#F42B15")); //RED
+                                alt5.setBackgroundResource(R.drawable.bg_incorrect_alternatives); //RED
 
                                 if (alt1.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt1.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt1.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 else if(alt2.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt2.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt2.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 else if(alt3.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt3.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt3.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 else if(alt4.getText().toString().equals(question.getAnswer())){
 
-                                    bg_alt4.setBackgroundColor(Color.parseColor("#3ED14D")); //GREEN
+                                    alt4.setBackgroundResource(R.drawable.bg_correct_alternatives); //GREEN
 
                                 }
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        bg_alt1.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt2.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt3.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt4.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
-                                        bg_alt5.setBackgroundColor(Color.parseColor("#dbfdbb")); //ORIGIN COLOR
+                                        alt1.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt2.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt3.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt4.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
+                                        alt5.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
                                         updateQuestion();
                                     }
                                 },1500);
@@ -381,17 +386,12 @@ public class Historia extends AppCompatActivity {
         backButton = (MaterialButton) findViewById(R.id.btn_back_quiz);
         quest = (TextView) findViewById(R.id.question);
 
-        alt1 = (TextView) findViewById(R.id.alt1);
-        alt2 = (TextView) findViewById(R.id.alt2);
-        alt3 = (TextView) findViewById(R.id.alt3);
-        alt4 = (TextView) findViewById(R.id.alt4);
-        alt5 = (TextView) findViewById(R.id.alt5);
+        alt1 = (AppCompatButton) findViewById(R.id.mb_alt1);
+        alt2 = (AppCompatButton) findViewById(R.id.mb_alt2);
+        alt3 = (AppCompatButton) findViewById(R.id.mb_alt3);
+        alt4 = (AppCompatButton) findViewById(R.id.mb_alt4);
+        alt5 = (AppCompatButton) findViewById(R.id.mb_alt5);
 
-        bg_alt1 = (CardView) findViewById(R.id.cv_alt1);
-        bg_alt2 = (CardView) findViewById(R.id.cv_alt2);
-        bg_alt3 = (CardView) findViewById(R.id.cv_alt3);
-        bg_alt4 = (CardView) findViewById(R.id.cv_alt4);
-        bg_alt5 = (CardView) findViewById(R.id.cv_alt5);
 
     }
 }
