@@ -123,6 +123,7 @@ public class Historia extends AppCompatActivity {
                                         alt4.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
                                         alt5.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
                                         updateQuestion();
+
                                     }
                                 },1500);
 
