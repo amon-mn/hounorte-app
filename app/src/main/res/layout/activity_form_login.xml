@@ -10,6 +10,7 @@
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_bemvindo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFCE5"
@@ -103,7 +104,6 @@
 
         <LinearLayout
             android:id="@+id/layout_esqueceu_email_senha"
-
             android:layout_width="383dp"
             android:layout_height="29dp"
             android:layout_marginTop="36dp"

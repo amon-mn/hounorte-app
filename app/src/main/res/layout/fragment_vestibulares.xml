@@ -42,22 +42,6 @@
                     app:layout_constraintVertical_bias="1.0" />
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_back_test"
-                    android:layout_width="56dp"
-                    android:layout_height="56dp"
-                    android:layout_marginStart="16dp"
-                    android:background="@drawable/btn_circle_shape_invisible"
-                    android:clickable="true"
-                    android:elevation="10dp"
-                    android:focusable="true"
-                    app:icon="@drawable/ic_arrow_back"
-                    app:iconTint="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="ContentDescription" />
-
-                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_search_teste"
                     android:layout_width="56dp"
                     android:layout_height="56dp"

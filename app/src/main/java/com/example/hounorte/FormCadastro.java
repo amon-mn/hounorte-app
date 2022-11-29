@@ -14,6 +14,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -32,7 +33,7 @@ public class FormCadastro extends AppCompatActivity {
     String[] mensagens = {"Preencha todos os campos","Cadastro realizado com sucesso"};
     String usuarioID;
 
-
+    private FloatingActionButton arrow_back_cadastro;
     private TextView txt_login;
     //private AppCompatButton btn_criar_conta;
 
@@ -42,6 +43,16 @@ public class FormCadastro extends AppCompatActivity {
         setContentView(R.layout.activity_form_cadastro);
 
         IniciarComponentes();
+
+        arrow_back_cadastro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
+
+
 
         btn_criar_conta.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -152,6 +163,7 @@ public class FormCadastro extends AppCompatActivity {
         edit_email = findViewById(R.id.edit_email);
         edit_senha = findViewById(R.id.edit_senha);
         btn_criar_conta = findViewById(R.id.btn_criar_conta);
+        arrow_back_cadastro = findViewById(R.id.fab_arrow_back_cadastro);
 
     }
 

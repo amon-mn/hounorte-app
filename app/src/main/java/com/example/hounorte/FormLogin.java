@@ -2,6 +2,8 @@ package com.example.hounorte;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -20,9 +22,12 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import org.w3c.dom.Text;
+
 public class FormLogin extends AppCompatActivity {
 
     private TextView txt_cadastre_se;
+    private TextView esqueceu_email_senha;
     //private AppCompatButton btn_entrar;
     private EditText edit_email,edit_senha;
     private Button bt_entrar;
@@ -34,7 +39,6 @@ public class FormLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_login);
-
         IniciarComponentes();
 
         txt_cadastre_se.setOnClickListener(new View.OnClickListener() {
@@ -44,6 +48,17 @@ public class FormLogin extends AppCompatActivity {
                 Intent intent = new Intent(FormLogin.this, FormCadastro.class);
                 startActivity(intent);
             }
+            
+        });
+
+        esqueceu_email_senha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(FormLogin.this, RecuperarSenha.class);
+                startActivity(intent);
+            }
+
         });
 
 
@@ -118,6 +133,7 @@ public class FormLogin extends AppCompatActivity {
 
     private void IniciarComponentes(){
         txt_cadastre_se = findViewById(R.id.txt_cadastre_se);
+        esqueceu_email_senha = findViewById(R.id.esqueceu_email_senha);
         //bt_entrar = findViewById(R.id.btn_entrar);
         edit_email = findViewById(R.id.edit_email);
         edit_senha = findViewById(R.id.edit_senha);
@@ -125,5 +141,7 @@ public class FormLogin extends AppCompatActivity {
         progressBar = findViewById(R.id.progress_bar);
 
     }
+
+
 
 }
