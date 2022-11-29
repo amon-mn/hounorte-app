@@ -32,7 +32,7 @@ public class Historia extends AppCompatActivity {
     private AppCompatButton alt1, alt2, alt3, alt4, alt5;
 
 
-    int correct = 0, wrong = 0, total = -1;
+    int correct = 0, wrong = 0, total = 0;
     DatabaseReference reference;
 
 
@@ -81,15 +81,15 @@ public class Historia extends AppCompatActivity {
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        Toast.makeText(getApplicationContext(), "Corret", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
                                         correct++;
                                         alt1.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
-
+                                        updateQuestion();
                                     }
                                 },1500);
                             }
                             else{
-                                Toast.makeText(getApplicationContext(), "Incorret", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Incorrect", Toast.LENGTH_SHORT).show();
                                 wrong++;
                                 alt1.setBackgroundResource(R.drawable.bg_incorrect_alternatives); //RED
 
@@ -129,7 +129,7 @@ public class Historia extends AppCompatActivity {
                             }
                         }
                     });
-                    updateQuestion();
+
 
                     alt2.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -141,15 +141,15 @@ public class Historia extends AppCompatActivity {
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        Toast.makeText(getApplicationContext(), "Corret", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
                                         correct++;
                                         alt2.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
-
+                                        updateQuestion();
                                     }
                                 },1500);
                             }
                             else{
-                                Toast.makeText(getApplicationContext(), "Incorret", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Incorrect", Toast.LENGTH_SHORT).show();
                                 wrong++;
                                 alt2.setBackgroundResource(R.drawable.bg_incorrect_alternatives); //RED
 
@@ -201,15 +201,15 @@ public class Historia extends AppCompatActivity {
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        Toast.makeText(getApplicationContext(), "Corret", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
                                         correct++;
                                         alt3.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
-
+                                        updateQuestion();
                                     }
                                 },1500);
                             }
                             else{
-                                Toast.makeText(getApplicationContext(), "Incorret", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Incorrect", Toast.LENGTH_SHORT).show();
                                 wrong++;
                                 alt3.setBackgroundResource(R.drawable.bg_incorrect_alternatives); //RED
 
@@ -261,15 +261,15 @@ public class Historia extends AppCompatActivity {
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        Toast.makeText(getApplicationContext(), "Corret", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
                                         correct++;
                                         alt4.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
-
+                                        updateQuestion();
                                     }
                                 },1500);
                             }
                             else{
-                                Toast.makeText(getApplicationContext(), "Incorret", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Incorrect", Toast.LENGTH_SHORT).show();
                                 wrong++;
                                 alt4.setBackgroundResource(R.drawable.bg_incorrect_alternatives); //RED
 
@@ -321,15 +321,15 @@ public class Historia extends AppCompatActivity {
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        Toast.makeText(getApplicationContext(), "Corret", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
                                         correct++;
                                         alt5.setBackgroundResource(R.drawable.bg_alternatives); //ORIGIN COLOR
-
+                                        updateQuestion();
                                     }
                                 },1500);
                             }
                             else{
-                                Toast.makeText(getApplicationContext(), "Incorret", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Incorrect", Toast.LENGTH_SHORT).show();
                                 wrong++;
                                 alt5.setBackgroundResource(R.drawable.bg_incorrect_alternatives); //RED
 
