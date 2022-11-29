@@ -27,82 +27,118 @@
 
             </View>
 
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="81dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="76dp"
+
+            <View
+                android:id="@+id/container_user"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="120dp"
+                android:background="@drawable/container_user_profile"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/hounorte_green" />
-
+                app:layout_constraintTop_toTopOf="parent" />
 
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="87dp"
-                android:layout_height="78dp"
-                android:layout_marginTop="48dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/container_user"
+                app:layout_constraintEnd_toEndOf="@+id/container_user"
+                app:layout_constraintStart_toStartOf="@+id/container_user"
+                app:layout_constraintTop_toTopOf="@+id/container_user"
                 app:srcCompat="@drawable/ic_person" />
 
-            <TextView
-                android:id="@+id/tituloNomeUsuario"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="136dp"
-                android:layout_marginTop="12dp"
-                android:text="henrique"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold"
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_edit_photo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
 
+                android:layout_marginTop="232dp"
+                android:background="@drawable/btn_cicle_shape"
+                android:clickable="true"
+                android:elevation="10dp"
+                android:focusable="true"
+                app:backgroundTint="@color/green_theme"
+                app:icon="@drawable/ic_edit"
+                app:iconPadding="5dp"
+                app:iconSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.641"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
-            <TextView
-                android:id="@+id/tituloSobreomeUsuario"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="12dp"
-                android:text="barreto"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/tituloNomeUsuario"
-                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/container_user">
+
+                <TextView
+                    android:id="@+id/tituloNomeUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+                <TextView
+                    android:id="@+id/tituloSobreomeUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/tituloNomeUsuario"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+
+            </LinearLayout>
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tab_layout_perfil"
-                android:layout_width="392dp"
+                android:layout_width="match_parent"
                 android:layout_height="41dp"
                 android:background="#FFFCE5"
-
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/green_theme"
+                app:tabMaxWidth="0dp"
+                app:tabMode="fixed"
+                app:tabTextColor="#333333"
                 tools:ignore="NotSibling">
 
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Meus Dados"
-                    tools:layout_editor_absoluteX="17dp"
-                    tools:layout_editor_absoluteY="345dp">
+                    android:text="@string/tab_meus_dados"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="343dp">
 
                 </com.google.android.material.tabs.TabItem>
 
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Minhas Listas"
+                    android:text="@string/tab_minhas_listas"
                     tools:layout_editor_absoluteX="17dp"
                     tools:layout_editor_absoluteY="345dp" />
 
@@ -137,11 +173,10 @@
                     android:id="@+id/nome"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:text="Nome"
                     android:layout_marginStart="16dp"
-                    android:textSize="22dp">
-                </TextView>
+                    android:layout_marginTop="0dp"
+                    android:text="@string/tv_titulo_nome"
+                    android:textSize="22sp"></TextView>
 
                 <TextView
                     android:id="@+id/perfil_nome"
@@ -149,11 +184,10 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/nome"
                     android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="18dp"
-                    android:layout_marginTop="8dp">
-                </TextView>
+                    android:textSize="18sp"></TextView>
 
                 <TextView
                     android:id="@+id/perfil_sobrenome"
@@ -165,30 +199,28 @@
                     android:layout_toEndOf="@+id/perfil_nome"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="18dp">
-                </TextView>
+                    android:textSize="18sp"></TextView>
 
                 <TextView
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/perfil_nome"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="15dp"
-                    android:text="Email"
-                    android:textSize="22dp"
-                    android:layout_marginStart="16dp">
-                </TextView>
+                    android:text="@string/tv_titulo_email"
+                    android:textSize="22sp"></TextView>
+
                 <TextView
                     android:id="@+id/perfil_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/email"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="5dp"
                     android:text=""
-                    android:textSize="18dp"
                     android:textColor="@color/black"
-                    android:layout_marginStart="16dp">
-                </TextView>
+                    android:textSize="18sp"></TextView>
 
 
                 <TextView
@@ -196,33 +228,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/perfil_email"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="15dp"
-                    android:text="Senha"
-                    android:textSize="22dp"
-                    android:layout_marginStart="16dp">
-                </TextView>
+                    android:text="@string/tv_titulo_senha"
+                    android:textSize="22sp"></TextView>
+
                 <TextView
                     android:id="@+id/perfil_senha"
-                    android:inputType="textPassword"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/senha"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="5dp"
-                    android:text="*************************"
-                    android:textSize="18dp"
+                    android:inputType="textPassword"
+                    android:text="@string/tv_senha_oculta"
                     android:textColor="@color/black"
-                    android:layout_marginStart="16dp">
-                </TextView>
+                    android:textSize="18sp"></TextView>
+
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_senha"
                     android:layout_width="50dp"
                     android:layout_height="30dp"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="168dp"
                     android:background="@drawable/btn_circle_shape_invisible"
                     app:icon="@drawable/ic_edit"
                     app:iconSize="35dp"
-                    android:layout_marginStart="300dp"
                     app:iconTint="@color/green_theme"
-                    android:layout_marginTop="168dp"
                     app:srcCompat="@drawable/ic_logout" />
 
 
@@ -231,22 +263,21 @@
                     android:layout_width="210dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/perfil_senha"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="30dp"
                     android:text="Sair da minha conta"
-                    android:textSize="22sp"
-                    android:layout_marginStart="16dp">
-                </TextView>
+                    android:textSize="22sp"></TextView>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_logout"
                     android:layout_width="50dp"
                     android:layout_height="30dp"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="240dp"
                     android:background="@drawable/btn_circle_shape_invisible"
                     app:icon="@drawable/ic_logout"
                     app:iconSize="35dp"
-                    android:layout_marginStart="300dp"
                     app:iconTint="@color/green_theme"
-                    android:layout_marginTop="240dp"
                     app:srcCompat="@drawable/ic_logout" />
 
             </RelativeLayout>

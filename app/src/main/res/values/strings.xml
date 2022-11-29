@@ -63,5 +63,11 @@
     <string name="tv_barEx">/</string>
     <string name="tv_fonte">Fonte:</string>
     <string name="tv_textNextQ">TEXTO PARA A QUESTÃO A SEGUIR :</string>
+    <string name="tab_meus_dados">Meus Dados</string>
+    <string name="tab_minhas_listas">Minhas Listas</string>
+    <string name="tv_senha_oculta">*************************</string>
+    <string name="tv_titulo_senha">Senha</string>
+    <string name="tv_titulo_email">Email</string>
+    <string name="tv_titulo_nome">Nome</string>
 
 </resources>
