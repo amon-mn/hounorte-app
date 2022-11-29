@@ -59,5 +59,9 @@
     <string name="lorem_ipsum_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus lorem est, at dignissim quam bibendum ut. Aenean at lorem in augue fermentum auctor non eu purus. Nulla sit amet mi facilisis, commodo quam nec, hendrerit tortor. Ut lacinia dolor in metus accumsan sodales. Pellentesque ut justo fringilla, sollicitudin sem vitae, tincidunt massa. Fusce vulputate tortor et cursus mollis.</string>
     <string name="encontre_sua_conta">Encontre sua conta</string>
     <string name="insira_seu_email">Insira seu Email</string>
+    <string name="tv_exercicio">Exercício</string>
+    <string name="tv_barEx">/</string>
+    <string name="tv_fonte">Fonte:</string>
+    <string name="tv_textNextQ">TEXTO PARA A QUESTÃO A SEGUIR :</string>
 
 </resources>
