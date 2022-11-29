@@ -208,7 +208,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/senha"
                     android:layout_marginTop="5dp"
-                    android:text=""
+                    android:text="*************************"
                     android:textSize="18dp"
                     android:textColor="@color/black"
                     android:layout_marginStart="16dp">

@@ -73,10 +73,8 @@ public class PaginaPerfilFragment extends Fragment {
                     nomeUsuario.setText(documentSnapshot.getString("nome"));
                     sobreNomeUsuario.setText(documentSnapshot.getString("sobrenome"));
                     emailUsuario.setText(documentSnapshot.getString("email"));
-                    senhaUsuario.setText(documentSnapshot.getString("senha"));
                     tituloNomeUsuario.setText(documentSnapshot.getString("nome"));
                     tituloSobrenomeUsuario.setText((documentSnapshot.getString("sobrenome")));
-
                 }
             }
         });

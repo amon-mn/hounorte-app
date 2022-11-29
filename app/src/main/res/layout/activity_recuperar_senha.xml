@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFCE5"
+        tools:context=".FormLogin">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="114dp"
+            android:layout_height="102dp"
+            android:layout_marginTop="56dp"
+            android:contentDescription="@string/logo_hounorte"
+            android:src="@drawable/hounorte_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="@string/insira_seu_email"
+            android:textColor="#333333"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <View
+            android:id="@+id/container_recuperar"
+            style="@style/ContainerComponents"
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            style="@style/Edit_Text"
+            android:layout_marginTop="24dp"
+            android:autofillHints="emailAddress"
+            android:drawableEnd="@drawable/ic_email"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="@+id/container_recuperar"
+            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintStart_toStartOf="@+id/container_recuperar"
+            app:layout_constraintTop_toTopOf="@+id/container_recuperar" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_recuperar"
+            style="@style/Button_Type"
+            android:background="@drawable/bg_btn_cadastrar"
+            android:elevation="10dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:padding="10dp"
+            android:text="@string/encontre_sua_conta"
+            app:layout_constraintBottom_toBottomOf="@+id/container_recuperar"
+            app:layout_constraintEnd_toEndOf="@+id/container_recuperar"
+            app:layout_constraintHorizontal_bias="0.595"
+            app:layout_constraintStart_toStartOf="@+id/container_recuperar"
+            app:layout_constraintTop_toBottomOf="@+id/edit_email"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container_recuperar" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_arrow_back_recuperar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            app:backgroundTint="#00FFFFFF"
+            app:borderWidth="2dp"
+            app:elevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:pressedTranslationZ="3dp"
+            app:rippleColor="#00FFFFFF"
+            app:srcCompat="@drawable/ic_arrow_back"
+            android:focusable="true"
+            tools:ignore="ContentDescription" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
