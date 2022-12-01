@@ -36,7 +36,6 @@ public class PaginaPerfilFragment extends Fragment {
         nomeUsuario = view.findViewById(R.id.perfil_nome);
         sobreNomeUsuario = view.findViewById(R.id.perfil_sobrenome);
         emailUsuario = view.findViewById(R.id.perfil_email);
-        senhaUsuario = view.findViewById(R.id.perfil_senha);
         bt_deslogar = view.findViewById(R.id.btn_logout);
         tituloNomeUsuario = view.findViewById(R.id.tituloNomeUsuario);
         tituloSobrenomeUsuario = view.findViewById(R.id.tituloSobreomeUsuario);
