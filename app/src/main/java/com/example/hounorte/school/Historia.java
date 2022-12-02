@@ -31,10 +31,8 @@ public class Historia extends AppCompatActivity {
     private TextView quest;
     private AppCompatButton alt1, alt2, alt3, alt4, alt5;
 
-
-    int correct = 0, wrong = 0, total = 0;
+    int correct = 0, wrong = 0, total = -1;
     DatabaseReference reference;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +47,6 @@ public class Historia extends AppCompatActivity {
                 onBackPressed();
             }
         });
-
     }
 
     private void updateQuestion(){

@@ -1,11 +1,11 @@
 package com.example.hounorte.model;
 
 public class Question {
-    public String question, alt1, alt2, alt3, alt4, alt5, answer;
+    public String question, mb_alt1, alt2, alt3, alt4, alt5, answer;
 
     public Question(String question, String alt1, String alt2, String alt3, String alt4, String alt5, String answer) {
         this.question = question;
-        this.alt1 = alt1;
+        this.mb_alt1 = alt1;
         this.alt2 = alt2;
         this.alt3 = alt3;
         this.alt4 = alt4;
@@ -24,11 +24,11 @@ public class Question {
     }
 
     public String getAlt1() {
-        return alt1;
+        return mb_alt1;
     }
 
     public void setAlt1(String alt1) {
-        this.alt1 = alt1;
+        this.mb_alt1 = alt1;
     }
 
     public String getAlt2() {
