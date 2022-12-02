@@ -42,7 +42,7 @@
                     app:layout_constraintVertical_bias="1.0" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/tv_quizId"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="32dp"
@@ -95,7 +95,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="Exercicio"
+                android:text="@string/tv_exercicio"
                 android:textColor="#333333"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -121,7 +121,7 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="24dp"
                 android:layout_toEndOf="@+id/tv_questId"
-                android:text="de"
+                android:text="@string/tv_barEx"
                 android:textColor="#333333"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -147,7 +147,7 @@
                 android:layout_marginStart="72dp"
                 android:layout_marginTop="24dp"
                 android:layout_toEndOf="@+id/tv_total"
-                android:text="Fonte:"
+                android:text="@string/tv_fonte"
                 android:textColor="#333333"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -175,7 +175,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="0dp"
-                android:text="TEXTO PARA A QUESTÃO A SEGUIR :"
+                android:text="@string/tv_textNextQ"
                 android:textSize="18sp"
                 android:textColor="#333333" />
 
@@ -264,52 +264,7 @@
 
             </androidx.appcompat.widget.AppCompatButton>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/bt_responder"
-                android:layout_width="330dp"
-                android:layout_height="56dp"
-                android:layout_below="@+id/mb_alt5"
 
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="40dp"
-                android:background="@drawable/bg_exercicios"
-                android:text="Responder"
-                android:textColor="@color/white">
-
-            </androidx.appcompat.widget.AppCompatButton>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/bt_anterior"
-                android:layout_width="172dp"
-                android:layout_height="48dp"
-                android:layout_below="@+id/bt_responder"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="40dp"
-                android:layout_marginBottom="56dp"
-                android:background="@drawable/bg_exercicios"
-                android:text="Anterior"
-                android:textColor="@color/white">
-
-            </androidx.appcompat.widget.AppCompatButton>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/bt_proximo"
-                android:layout_width="172dp"
-                android:layout_height="48dp"
-                android:layout_below="@+id/bt_responder"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="56dp"
-                android:background="@drawable/bg_exercicios"
-                android:text="Próximo"
-                android:textColor="@color/white">
-
-            </androidx.appcompat.widget.AppCompatButton>
 
 
         </RelativeLayout>

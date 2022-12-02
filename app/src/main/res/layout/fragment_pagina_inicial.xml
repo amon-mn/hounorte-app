@@ -34,17 +34,30 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription" />
 
-        <ImageView
-            android:id="@+id/imageView3"
+
+        <View
+            android:id="@+id/container_user"
             android:layout_width="48dp"
             android:layout_height="48dp"
+            android:background="@drawable/container_user_profile"
             android:layout_marginTop="16dp"
-            android:src="@drawable/person"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.955"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/container_user"
+            app:layout_constraintEnd_toEndOf="@+id/container_user"
+            app:layout_constraintStart_toStartOf="@+id/container_user"
+            app:layout_constraintTop_toTopOf="@+id/container_user"
+            app:srcCompat="@drawable/ic_person" />
+
 
         <TextView
             android:id="@+id/nomeTelaInicial"
@@ -53,7 +66,7 @@
             android:layout_marginStart="4dp"
             android:layout_marginTop="94dp"
             android:fontFamily="@font/quicksand_bold"
-            android:text="Pedro"
+            android:text=""
             android:textAllCaps="false"
             android:textColor="@color/black_gray"
             android:textSize="22sp"
@@ -68,8 +81,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="94dp"
-            android:text="Olá,"
             android:fontFamily="@font/quicksand_bold"
+            android:text="Olá,"
             android:textAllCaps="false"
             android:textColor="@color/black_gray"
             android:textSize="22sp"
@@ -202,7 +215,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/mat_icon"
-                        tools:ignore="ContentDescription"/>
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -240,7 +253,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/geo_icon"
-                        tools:ignore="ContentDescription"/>
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -316,7 +329,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/bio_icon"
-                        tools:ignore="ContentDescription"/>
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -354,7 +367,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/quimica_icon"
-                        tools:ignore="ContentDescription"/>
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -568,7 +581,6 @@
 
             </androidx.cardview.widget.CardView>
         </GridLayout>
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
