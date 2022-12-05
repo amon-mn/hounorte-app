@@ -31,7 +31,6 @@ public class VestibularesFragment extends Fragment {
         cv_psc = (CardView) view.findViewById(R.id.cv_psc);
         cv_sis = (CardView) view.findViewById(R.id.cv_sis);
 
-
         cv_ifam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
