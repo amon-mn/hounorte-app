@@ -69,5 +69,6 @@
     <string name="tv_titulo_senha">Senha</string>
     <string name="tv_titulo_email">Email</string>
     <string name="tv_titulo_nome">Nome</string>
+    <string name="teste">Teste</string>
 
 </resources>
