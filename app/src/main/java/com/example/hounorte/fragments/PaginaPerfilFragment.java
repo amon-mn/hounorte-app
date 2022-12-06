@@ -1,10 +1,10 @@
 package com.example.hounorte.fragments;
-
+ 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
-
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -26,15 +26,17 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
+import java.io.IOException;
+
 public class PaginaPerfilFragment extends Fragment {
 
     private TextView nomeUsuario , sobreNomeUsuario, emailUsuario, senhaUsuario, tituloNomeUsuario, tituloSobrenomeUsuario;
     private MaterialButton bt_deslogar;
     private Button btn_edit_photo;
     private ImageView imageView5;
-    private Uri mSelectUri;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     String usuarioID;
+    private Uri mSelectedUri;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -78,12 +80,21 @@ public class PaginaPerfilFragment extends Fragment {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == 0) {
-            mSelectUri = data.getData();
+            assert data != null;
+            mSelectedUri = data.getData();
 
             Bitmap bitmap = null;
+            try{
+                bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(),mSelectedUri);
+                imageView5.setImageDrawable(new BitmapDrawable(bitmap));
+                btn_edit_photo.setAlpha(0);
+            } catch (IOException e) {
+
+            }
 
         }
     }
+
 
     private  void selectPhoto(){
         Intent intente = new Intent(Intent.ACTION_PICK);
@@ -113,4 +124,5 @@ public class PaginaPerfilFragment extends Fragment {
         });
 
     }
+    
 }
