@@ -120,7 +120,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginStart="8dp"
 
-                    android:text="DD/MM/AA e DD/MM/AA"
+                    android:text="06/11/22 e 07/11/22"
                     android:textColor="#333333"
                     android:textSize="18sp"
                     android:textStyle="normal"
@@ -152,7 +152,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginStart="8dp"
 
-                    android:text="às XX:XX (hórário oficial de Manaus)"
+                    android:text="às 12:50 (hórário oficial de Manaus)"
                     android:textColor="#333333"
                     android:textSize="18sp"
                     android:textStyle="normal"
@@ -184,7 +184,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginStart="8dp"
 
-                    android:text="das XX:XX às XX:XX"
+                    android:text="das 13:00 às 17:00"
                     android:textColor="#333333"
                     android:textSize="18sp"
                     android:textStyle="normal"
@@ -199,8 +199,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:layout_marginStart="8dp"
-
-                    android:text="Conteúdo Programático:"
+                    android:text="O que é preciso levar para realizar a prova?"
                     android:textColor="#333333"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -216,7 +215,11 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginStart="8dp"
 
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus lorem est, at dignissim quam bibendum ut."
+                    android:text="- É recomendado levar caneta esferográfica de
+                    tinta preta, fabricada em material transparente.
+                    - Cartão de confirmação de inscrição.
+                    - Documento de identificação com foto .
+                    - Se quiser, o candidato pode levar um lanche."
                     android:textColor="#333333"
                     android:textSize="18sp"
                     android:textStyle="normal"

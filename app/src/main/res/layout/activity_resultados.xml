@@ -36,7 +36,7 @@
             android:layout_marginTop="16dp"
             android:fontFamily="@font/quicksand_bold"
             android:gravity="center"
-            android:text="PARABÉNS VOCÊ TERMINOU O QUIZ"
+            android:text="@string/parabens"
             android:textColor="@color/black"
             android:textSize="20sp">
         </TextView>
@@ -49,12 +49,13 @@
             android:layout_marginTop="30dp"
             android:fontFamily="@font/quicksand_bold"
             android:gravity="center"
-            android:text="SEUS ACERTOS"
+            android:textColor="@color/black"
+            android:text="@string/resultados"
             android:textSize="20sp">
         </TextView>
 
         <TextView
-            android:id="@+id/acertos"
+            android:id="@+id/correct"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/seus_acertos"
@@ -64,8 +65,8 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="206dp"
             android:gravity="center"
-            android:text="10"
-            android:textColor="@color/green_theme"
+            android:text="@string/qnt_a"
+            android:textColor="#008000"
             android:textSize="20sp">
 
         </TextView>
@@ -75,39 +76,37 @@
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/seus_acertos"
-            android:layout_alignLeft="@+id/acertos"
+            android:layout_alignStart="@+id/correct"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="185dp"
-            android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="186dp"
             android:gravity="center"
-            android:text="/"
+            android:text="@string/barra"
             android:textColor="@color/black"
             android:textSize="20sp">
         </TextView>
 
         <TextView
-            android:id="@+id/total"
+            android:id="@+id/wrong"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/seus_acertos"
-            android:layout_alignLeft="@id/barra"
+            android:layout_alignStart="@id/barra"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="205dp"
-            android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="166dp"
             android:gravity="center"
-            android:text="20"
+            android:text="@string/qnt_e"
             android:textColor="@color/red"
             android:textSize="20sp">
         </TextView>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_refazer_teste"
+            android:id="@+id/btn_pagina_principal"
             style="@style/Button_Type"
             android:layout_width="300dp"
             android:layout_height="45dp"
@@ -115,28 +114,11 @@
             android:layout_marginStart="55dp"
             android:layout_marginTop="60dp"
             android:background="@color/green_theme"
-            android:drawableStart="@drawable/ic_baseline_repeat"
-            android:padding="10dp"
-            android:text="Refazer Teste"
-            android:textColor="@color/black">
-        </androidx.appcompat.widget.AppCompatButton>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_pagina_principal"
-            style="@style/Button_Type"
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:layout_below="@+id/btn_refazer_teste"
-            android:layout_marginStart="55dp"
-            android:layout_marginTop="40dp"
-            android:background="@color/green_theme"
             android:drawableStart="@drawable/ic_home"
             android:padding="10dp"
-            android:text="Pagina Inicial"
+            android:text="@string/pagina_inicial"
             android:textColor="@color/black">
         </androidx.appcompat.widget.AppCompatButton>
-
-
     </RelativeLayout>
 
 

@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.hounorte.R;
-import com.example.hounorte.school.Artes;
 import com.example.hounorte.school.Biologia;
 import com.example.hounorte.school.Espanhol;
 import com.example.hounorte.school.Filosofia;
@@ -41,7 +40,6 @@ public class ListasExerciciosFragment extends Fragment {
         cv_geografia = (CardView) view.findViewById(R.id.cv_geografia);
         cv_filosofia = (CardView) view.findViewById(R.id.cv_filosofia);
         cv_sociologia = (CardView) view.findViewById(R.id.cv_sociologia);
-        cv_artes = (CardView) view.findViewById(R.id.cv_artes);
         cv_portugues = (CardView) view.findViewById(R.id.cv_portugues);
         cv_ingles = (CardView) view.findViewById(R.id.cv_ingles);
         cv_espanhol = (CardView) view.findViewById(R.id.cv_espanhol);
@@ -82,13 +80,6 @@ public class ListasExerciciosFragment extends Fragment {
             }
         });
 
-        cv_artes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent in5 = new Intent(getActivity(), Artes.class);
-                startActivity(in5);
-            }
-        });
 
         cv_portugues.setOnClickListener(new View.OnClickListener() {
             @Override

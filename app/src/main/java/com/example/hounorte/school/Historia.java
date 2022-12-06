@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.hounorte.R;
+import com.example.hounorte.Resultados;
 import com.example.hounorte.model.Question;
 import com.google.android.material.button.MaterialButton;
 import com.google.firebase.database.DataSnapshot;
@@ -24,6 +25,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.List;
 
 
 public class Historia extends AppCompatActivity {
@@ -33,7 +36,7 @@ public class Historia extends AppCompatActivity {
     private AppCompatButton alt1, alt2, alt3, alt4, alt5;
 
 
-    int correct = 0, wrong = 0, total = -1;
+    private int correct = 0, wrong = 0, total = -1;
     DatabaseReference reference;
 
 
@@ -55,17 +58,15 @@ public class Historia extends AppCompatActivity {
 
     private void updateQuestion(){
         total++;
-        if(total>2){
-            /*
-            Intent in = new Intent(Historia.this, ResultActivity.class);
-            in.putExtra("total", String.valueOf(total));
+        if(total>1){
+            Intent in = new Intent(Historia.this, Resultados.class);
             in.putExtra("correct", String.valueOf(correct));
-            in.putExtra("incorrect", String.valueOf(wrong));
+            in.putExtra("wrong", String.valueOf(wrong));
+            in.putExtra("total", String.valueOf(total));
             startActivity(in);
-             */
         }
         else{
-            reference = FirebaseDatabase.getInstance().getReference().child("module").child("0").child("Historia").child("questions").child(String.valueOf(total));
+            reference = FirebaseDatabase.getInstance().getReference().child("module").child("2").child("Historia").child("questions").child(String.valueOf(total));
             reference.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -382,9 +383,10 @@ public class Historia extends AppCompatActivity {
         alt3 = (AppCompatButton) findViewById(R.id.mb_alt3);
         alt4 = (AppCompatButton) findViewById(R.id.mb_alt4);
         alt5 = (AppCompatButton) findViewById(R.id.mb_alt5);
-
         questId = (TextView) findViewById(R.id.tv_questId);
 
 
     }
+
+
 }

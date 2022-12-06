@@ -41,21 +41,6 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="1.0" />
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_back_le"
-                    android:layout_width="56dp"
-                    android:layout_height="56dp"
-                    android:layout_marginStart="16dp"
-                    android:background="@drawable/btn_circle_shape_invisible"
-                    android:clickable="true"
-                    android:elevation="10dp"
-                    android:focusable="true"
-                    app:icon="@drawable/ic_arrow_back"
-                    app:iconTint="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_search_le"
@@ -145,7 +130,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView3">
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:layout_constraintVertical_bias="1.0">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cv_historia"
@@ -300,43 +286,6 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_artes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="16dp"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="10dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/bg_categories"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/arts_icon"
-                            tools:ignore="ContentDescription" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
-                            android:fontFamily="@font/poppins_bold"
-                            android:text="Artes"
-                            android:textColor="@color/black_gray"
-                            android:textSize="18sp" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cv_portugues"

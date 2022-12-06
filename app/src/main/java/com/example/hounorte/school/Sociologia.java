@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.hounorte.R;
+import com.example.hounorte.Resultados;
 import com.example.hounorte.model.Question;
 import com.google.android.material.button.MaterialButton;
 import com.google.firebase.database.DataSnapshot;
@@ -55,17 +56,15 @@ public class Sociologia extends AppCompatActivity {
 
     private void updateQuestion(){
         total++;
-        if(total>2){
-            /*
-            Intent in = new Intent(Historia.this, ResultActivity.class);
-            in.putExtra("total", String.valueOf(total));
-            in.putExtra("correct", String.valueOf(correct));
-            in.putExtra("incorrect", String.valueOf(wrong));
-            startActivity(in);
-             */
-        }
+            if(total>1){
+                Intent in = new Intent(Sociologia.this, Resultados.class);
+                in.putExtra("correct", String.valueOf(correct));
+                in.putExtra("wrong", String.valueOf(wrong));
+                in.putExtra("total", String.valueOf(total));
+                startActivity(in);
+            }
         else{
-            reference = FirebaseDatabase.getInstance().getReference().child("module").child("0").child("Sociologia").child("questions").child(String.valueOf(total));
+            reference = FirebaseDatabase.getInstance().getReference().child("module").child("5").child("Sociologia").child("questions").child(String.valueOf(total));
             reference.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {

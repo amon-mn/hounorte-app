@@ -70,5 +70,12 @@
     <string name="tv_titulo_email">Email</string>
     <string name="tv_titulo_nome">Nome</string>
     <string name="teste">Teste</string>
+    <string name="refazer_teste">Refazer Teste</string>
+    <string name="pagina_inicial">Pagina Inicial</string>
+    <string name="barra">/</string>
+    <string name="qnt_a">10</string>
+    <string name="qnt_e">20</string>
+    <string name="parabens">PARABÉNS VOCÊ TERMINOU O QUIZ</string>
+    <string name="resultados">RESULTADOS:</string>
 
 </resources>
