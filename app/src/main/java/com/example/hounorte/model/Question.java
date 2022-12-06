@@ -1,17 +1,28 @@
 package com.example.hounorte.model;
 
 public class Question {
-    public String question, mb_alt1, alt2, alt3, alt4, alt5, answer;
+    public String question;
+    public String alt1;
+    public String alt2;
+    public String alt3;
+    public String alt4;
+    public String alt5;
+    public String answer;
+    public String fonteId;
+    public String questId;
 
-    public Question(String question, String alt1, String alt2, String alt3, String alt4, String alt5, String answer) {
+    public Question(String question, String alt1, String alt2, String alt3, String alt4, String alt5, String answer, String fonteId, String questId) {
         this.question = question;
-        this.mb_alt1 = alt1;
+        this.alt1 = alt1;
         this.alt2 = alt2;
         this.alt3 = alt3;
         this.alt4 = alt4;
         this.alt5 = alt5;
         this.answer = answer;
+        this.fonteId = fonteId;
+        this.questId = questId;
     }
+
 
     public Question(){}
 
@@ -24,11 +35,11 @@ public class Question {
     }
 
     public String getAlt1() {
-        return mb_alt1;
+        return alt1;
     }
 
     public void setAlt1(String alt1) {
-        this.mb_alt1 = alt1;
+        this.alt1 = alt1;
     }
 
     public String getAlt2() {
@@ -70,4 +81,21 @@ public class Question {
     public void setAnswer(String answer) {
         this.answer = answer;
     }
+
+    public String getFonteId() {
+        return fonteId;
+    }
+
+    public void setFonteId(String fonteId) {
+        this.fonteId = fonteId;
+    }
+
+    public String getQuestId() {
+        return questId;
+    }
+
+    public void setQuestId(String questId) {
+        this.questId = questId;
+    }
+
 }
