@@ -32,12 +32,12 @@
                 android:id="@+id/container_user"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_marginTop="120dp"
+                android:layout_marginTop="116dp"
                 android:background="@drawable/container_user_profile"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -46,8 +46,10 @@
                 android:layout_margin="10dp"
                 app:layout_constraintBottom_toBottomOf="@+id/container_user"
                 app:layout_constraintEnd_toEndOf="@+id/container_user"
+                app:layout_constraintHorizontal_bias="0.475"
                 app:layout_constraintStart_toStartOf="@+id/container_user"
                 app:layout_constraintTop_toTopOf="@+id/container_user"
+                app:layout_constraintVertical_bias="0.45"
                 app:srcCompat="@drawable/ic_person" />
 
             <com.google.android.material.button.MaterialButton
