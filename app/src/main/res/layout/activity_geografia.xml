@@ -194,6 +194,11 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/mb_alt1"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:text=""
                 android:layout_width="match_parent"
                 android:layout_height="59dp"
                 android:layout_below="@+id/question"
@@ -210,6 +215,11 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/mb_alt2"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:text=""
                 android:layout_width="match_parent"
                 android:layout_height="59dp"
                 android:layout_below="@+id/mb_alt1"
@@ -224,6 +234,11 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/mb_alt3"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:text=""
                 android:layout_width="match_parent"
                 android:layout_height="59dp"
                 android:layout_below="@+id/mb_alt2"
@@ -238,8 +253,13 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/mb_alt4"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:text=""
                 android:layout_width="match_parent"
-                android:layout_height="59dp"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/mb_alt3"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
@@ -252,8 +272,14 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/mb_alt5"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:text=""
+                android:fontFamily="@font/quicksand_medium"
                 android:layout_width="match_parent"
-                android:layout_height="59dp"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/mb_alt4"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"

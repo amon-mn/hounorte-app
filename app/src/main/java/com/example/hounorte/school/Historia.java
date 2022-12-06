@@ -29,7 +29,7 @@ import com.google.firebase.database.ValueEventListener;
 public class Historia extends AppCompatActivity {
 
     private MaterialButton backButton;
-    private TextView quest;
+    private TextView quest, questId;
     private AppCompatButton alt1, alt2, alt3, alt4, alt5;
 
 
@@ -382,6 +382,8 @@ public class Historia extends AppCompatActivity {
         alt3 = (AppCompatButton) findViewById(R.id.mb_alt3);
         alt4 = (AppCompatButton) findViewById(R.id.mb_alt4);
         alt5 = (AppCompatButton) findViewById(R.id.mb_alt5);
+
+        questId = (TextView) findViewById(R.id.tv_questId);
 
 
     }
