@@ -30,7 +30,7 @@ import com.google.firebase.database.ValueEventListener;
 public class Portugues extends AppCompatActivity {
 
     private MaterialButton backButton;
-    private TextView quest;
+    private TextView quest, questId, fontId;
     private AppCompatButton alt1, alt2, alt3, alt4, alt5;
 
 
@@ -77,6 +77,8 @@ public class Portugues extends AppCompatActivity {
                     alt3.setText(question.getAlt3());
                     alt4.setText(question.getAlt4());
                     alt5.setText(question.getAlt5());
+                    questId.setText(question.getQuestId());
+                    fontId.setText(question.getFonteId());
 
                     alt1.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -381,7 +383,8 @@ public class Portugues extends AppCompatActivity {
         alt3 = (AppCompatButton) findViewById(R.id.mb_alt3);
         alt4 = (AppCompatButton) findViewById(R.id.mb_alt4);
         alt5 = (AppCompatButton) findViewById(R.id.mb_alt5);
-
+        questId = (TextView) findViewById(R.id.tv_questId);
+        fontId = (TextView) findViewById(R.id.tv_fonteId);
 
     }
 }
