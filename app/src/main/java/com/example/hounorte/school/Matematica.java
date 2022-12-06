@@ -65,7 +65,7 @@ public class Matematica extends AppCompatActivity {
              */
         }
         else{
-            reference = FirebaseDatabase.getInstance().getReference().child("module").child("0").child("Matematica").child("questions").child(String.valueOf(total));
+            reference = FirebaseDatabase.getInstance().getReference().child("module").child("1").child("Matematica").child("questions").child(String.valueOf(total));
             reference.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {

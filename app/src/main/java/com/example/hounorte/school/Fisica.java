@@ -65,7 +65,7 @@ public class Fisica extends AppCompatActivity {
              */
         }
         else{
-            reference = FirebaseDatabase.getInstance().getReference().child("module").child("0").child("Fisica").child("questions").child(String.valueOf(total));
+            reference = FirebaseDatabase.getInstance().getReference().child("module").child("9").child("Fisica").child("questions").child(String.valueOf(total));
             reference.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
