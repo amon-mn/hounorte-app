@@ -98,7 +98,7 @@
             android:layout_height="66dp"
             android:layout_marginTop="138dp"
             android:fontFamily="@font/quicksand"
-            android:text="@string/descricao_home"
+            android:text="Aqui você praticar alguns exercicios que já foram cobrados em vestibulares anteriores"
             android:textAllCaps="false"
             android:textColor="@color/black_gray"
             android:textSize="16sp"

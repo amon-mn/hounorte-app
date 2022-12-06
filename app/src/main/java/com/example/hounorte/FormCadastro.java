@@ -1,5 +1,7 @@
 package com.example.hounorte;
 
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -23,19 +25,31 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
 import java.util.HashMap;
 import java.util.Map;
+import java.util.UUID;
 
-public class FormCadastro extends AppCompatActivity {
+public class FormCadastro<mTakePhoto> extends AppCompatActivity {
 
     private EditText edit_nome,edit_sobrenome,edit_email,edit_senha;
     private Button btn_criar_conta;
+    private FloatingActionButton arrow_back_cadastro;
+    private TextView txt_login;
+
+    private FirebaseStorage storage;
+    ActivityResultLauncher<String> mTakePhoto;
+    boolean imagemSelecionada = false;
+
     String[] mensagens = {"Preencha todos os campos","Cadastro realizado com sucesso"};
     String usuarioID;
 
-    private FloatingActionButton arrow_back_cadastro;
-    private TextView txt_login;
+
     //private AppCompatButton btn_criar_conta;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,9 +64,6 @@ public class FormCadastro extends AppCompatActivity {
                 onBackPressed();
             }
         });
-
-
-
 
         btn_criar_conta.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -132,6 +143,8 @@ public class FormCadastro extends AppCompatActivity {
 
 
         FirebaseFirestore db  = FirebaseFirestore.getInstance();
+        String filename = UUID.randomUUID().toString();
+
 
         Map<String,Object> usuarios = new HashMap<>();
         usuarios.put("nome",nome);
@@ -156,6 +169,7 @@ public class FormCadastro extends AppCompatActivity {
                 });
     }
 
+
     private void IniciarComponentes(){
         txt_login = findViewById(R.id.txt_login);
         edit_nome = findViewById(R.id.edit_nome);
@@ -166,6 +180,8 @@ public class FormCadastro extends AppCompatActivity {
         arrow_back_cadastro = findViewById(R.id.fab_arrow_back_cadastro);
 
     }
+
+
 
 
 }
