@@ -8,7 +8,7 @@ public class Question {
     public String alt4;
     public String alt5;
     public String answer;
-    public String fonteId;
+    public String fontId;
     public String questId;
 
     public Question(String question, String alt1, String alt2, String alt3, String alt4, String alt5, String answer, String fonteId, String questId) {
@@ -19,7 +19,7 @@ public class Question {
         this.alt4 = alt4;
         this.alt5 = alt5;
         this.answer = answer;
-        this.fonteId = fonteId;
+        this.fontId = fonteId;
         this.questId = questId;
     }
 
@@ -83,11 +83,11 @@ public class Question {
     }
 
     public String getFonteId() {
-        return fonteId;
+        return fontId;
     }
 
     public void setFonteId(String fonteId) {
-        this.fonteId = fonteId;
+        this.fontId = fonteId;
     }
 
     public String getQuestId() {

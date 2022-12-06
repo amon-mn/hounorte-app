@@ -32,7 +32,7 @@ import java.util.List;
 public class Historia extends AppCompatActivity {
 
     private MaterialButton backButton;
-    private TextView quest, questId, fonteId;
+    private TextView quest, questId, fontId;
     private AppCompatButton alt1, alt2, alt3, alt4, alt5;
 
 
@@ -80,7 +80,7 @@ public class Historia extends AppCompatActivity {
                     alt4.setText(question.getAlt4());
                     alt5.setText(question.getAlt5());
                     questId.setText(question.getQuestId());
-                    fonteId.setText(question.getFonteId());
+                    fontId.setText(question.getFonteId());
 
                     alt1.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -386,7 +386,7 @@ public class Historia extends AppCompatActivity {
         alt4 = (AppCompatButton) findViewById(R.id.mb_alt4);
         alt5 = (AppCompatButton) findViewById(R.id.mb_alt5);
         questId = (TextView) findViewById(R.id.tv_questId);
-        fonteId = (TextView) findViewById(R.id.tv_fonteId);
+        fontId = (TextView) findViewById(R.id.tv_fonteId);
 
 
 
