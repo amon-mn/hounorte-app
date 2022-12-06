@@ -1,14 +1,20 @@
 package com.example.hounorte.fragments;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import com.example.hounorte.FormLogin;
 import com.example.hounorte.R;
@@ -24,6 +30,9 @@ public class PaginaPerfilFragment extends Fragment {
 
     private TextView nomeUsuario , sobreNomeUsuario, emailUsuario, senhaUsuario, tituloNomeUsuario, tituloSobrenomeUsuario;
     private MaterialButton bt_deslogar;
+    private Button btn_edit_photo;
+    private ImageView imageView5;
+    private Uri mSelectUri;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     String usuarioID;
 
@@ -39,6 +48,15 @@ public class PaginaPerfilFragment extends Fragment {
         bt_deslogar = view.findViewById(R.id.btn_logout);
         tituloNomeUsuario = view.findViewById(R.id.tituloNomeUsuario);
         tituloSobrenomeUsuario = view.findViewById(R.id.tituloSobreomeUsuario);
+        btn_edit_photo = view.findViewById(R.id.btn_edit_photo);
+        imageView5 = view.findViewById(R.id.imageView5);
+
+        btn_edit_photo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                selectPhoto();
+            }
+        });
 
 
         bt_deslogar.setOnClickListener(new View.OnClickListener() {
@@ -55,7 +73,23 @@ public class PaginaPerfilFragment extends Fragment {
         return view;
     }
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
 
+        if (requestCode == 0) {
+            mSelectUri = data.getData();
+
+            Bitmap bitmap = null;
+
+        }
+    }
+
+    private  void selectPhoto(){
+        Intent intente = new Intent(Intent.ACTION_PICK);
+        intente.setType("image/*");
+        startActivityForResult(intente,0);
+    }
 
 
     @Override
