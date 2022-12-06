@@ -310,7 +310,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Titulo Assunto 1"
+                            android:text="Em Breve !!!"
                             android:textColor="#333333"
                             android:textStyle="bold"
                             android:textSize="18sp"
@@ -340,7 +340,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Titulo Assunto 2"
+                            android:text="Em Breve !!!"
                             android:textColor="#333333"
                             android:textStyle="bold"
                             android:textSize="18sp"
@@ -370,7 +370,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Titulo Assunto 3 "
+                            android:text="Em Breve !!!"
                             android:textColor="#333333"
                             android:textStyle="bold"
                             android:textSize="18sp"
@@ -400,7 +400,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Titulo Assunto 4 "
+                            android:text="Em Breve !!!"
                             android:textColor="#333333"
                             android:textStyle="bold"
                             android:textSize="18sp"
@@ -430,7 +430,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Titulo Assunto 5 "
+                            android:text="Em Breve !!!"
                             android:textColor="#333333"
                             android:textStyle="bold"
                             android:textSize="18sp"

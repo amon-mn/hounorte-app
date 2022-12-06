@@ -94,11 +94,13 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="327dp"
-            android:layout_height="66dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="138dp"
             android:fontFamily="@font/quicksand"
-            android:text="Aqui você praticar alguns exercicios que já foram cobrados em vestibulares anteriores"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="70dp"
+            android:text="Aqui você pode praticar alguns exercicios que já foram cobrados em vestibulares anteriores."
             android:textAllCaps="false"
             android:textColor="@color/black_gray"
             android:textSize="16sp"
@@ -123,21 +125,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_vt_exercicios"
-            android:layout_width="80dp"
-            android:layout_height="32dp"
-            android:layout_marginTop="32dp"
-            android:background="@drawable/bg_btn_cadastrar"
-            android:fontFamily="@font/quicksand_bold"
-            android:text="@string/btn_ver_tudo"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.864"
-            app:layout_constraintStart_toEndOf="@+id/textView4"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <GridLayout
             android:id="@+id/gridLayout"
@@ -399,21 +386,7 @@
             app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
 
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_vm_vest"
-            android:layout_width="80dp"
-            android:layout_height="32dp"
-            android:layout_marginTop="24dp"
-            android:background="@drawable/bg_btn_cadastrar"
-            android:fontFamily="@font/quicksand_bold"
-            android:text="@string/btn_ver_mais"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.913"
-            app:layout_constraintStart_toEndOf="@+id/tv_vestibulares"
-            app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
 
         <GridLayout
             android:id="@+id/gl_vestibulares"

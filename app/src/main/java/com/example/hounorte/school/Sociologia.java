@@ -41,7 +41,7 @@ public class Sociologia extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_historia);
+        setContentView(R.layout.activity_sociologia);
         InitComponents();
         updateQuestion();
 

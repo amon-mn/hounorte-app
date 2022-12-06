@@ -108,7 +108,7 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="24dp"
                 android:layout_toEndOf="@+id/exercicio"
-                android:text="x"
+                android:text=""
                 android:textColor="#333333"
                 android:textSize="20sp"
                 android:textStyle="bold" />
