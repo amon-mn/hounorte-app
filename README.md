@@ -48,6 +48,7 @@
  * **Amon Menezes Negreiros** 
  * **Henrique Freitas Barkett** 
  * **Pedro Carvalho de Almeida**
+ * **Wander Araújo da Silva Buraslan**
 
  Please follow github and join us!
  Thanks to visiting me and good coding!
