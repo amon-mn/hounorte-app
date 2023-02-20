@@ -1,0 +1,312 @@
+{
+  "module": [
+    {
+      "Portugues": {
+        "questions": [
+          {
+            "alt1": "a) paradoxo.",
+            "alt2": "b) personificação.",
+            "alt3": "c) antítese",
+            "alt4": "d) pleonasmo.",
+            "alt5": "e) eufemismo.",
+            "answer": "a) paradoxo.",
+            "fontId": "SIS, 1°, 2020",
+            "questId": "01",
+            "question": "A expressão “brilhar auroras” constitui um exemplo do estilocriticado por Vieira. Nela se verifica o recurso à seguinte figura de linguagem:"
+          },
+          {
+            "alt1": "a) “Ah! Não, minha Marília”",
+            "alt2": "b) “Aproveite-se o tempo, antes que faça”",
+            "alt3": "c) “As glórias, que vêm tarde, já vêm frias;”",
+            "alt4": "d) “Que havemos de esperar, Marília bela?”",
+            "alt5": "e) “E pode enfim mudar-se a nossa estrela.”",
+            "answer": "b) “Aproveite-se o tempo, antes que faça”",
+            "fontId": "MACRO, 2019",
+            "questId": "02",
+            "question": "Assinale o verso em que o eu lírico apresenta uma proposta de ação:"
+          }
+        ]
+      }
+    },
+    {
+      "Matematica": {
+        "questions": [
+          {
+            "alt1": "a) 1",
+            "alt2": "b) 2",
+            "alt3": "c) 3",
+            "alt4": "d) 4",
+            "alt5": "e) 5",
+            "answer": "d) 4",
+            "fontId": "PSC, 2020",
+            "questId": "01",
+            "question": "Um vendedor de uma determinada loja de eletrodomésticos recebe de salário R$1.350,00, mais uma comissão de R$255,00 por eletrodoméstico vendido. Sabendo que seu salário em um mês foi de R$ 2.370,00, a quantidade de eletrodomésticos vendidos foi de:"
+          },
+          {
+            "alt1": "a) 14%",
+            "alt2": "b) 15%",
+            "alt3": "c) 17%",
+            "alt4": "d) 18%",
+            "alt5": "e) 27%",
+            "answer": "c) 17%",
+            "fontId": "PSC, 2020",
+            "questId": "02",
+            "question": "Joaquina gostaria de comprar um carro novo, mas infelizmente não possui recursos financeiros suficientes para arcar com a compra do veículo à vista. Ela verificou uma das modalidades de crédito que permite a compra parcelada e planejada de um bem e fez uma simulação de um carro que custa R$50.000,00. Nesta simulação a parcela fixa mensalmente é 1,8% do valor do carro por um período de 65 meses. Dessa forma, quanto, em percentual, Joaquina pagaria a mais pelo veículo, segundo a simulação?"
+          }
+        ]
+      }
+    },
+    {
+      "Historia": {
+        "questions": [
+          {
+            "alt1": "a) Império Inca",
+            "alt2": "b) Império Maia",
+            "alt3": "c) Império de Oio",
+            "alt4": "d) Império Asteca",
+            "alt5": "e) Império Otomano",
+            "answer": "d) Império Asteca",
+            "fontId": "PSC, 2020",
+            "questId": "01",
+            "question": "Importantes civilizações dominaram a região Mesoamérica. Uma delas ficou conhecida pela sua imponente cidade, com seus imensos templos, mercados, jardins e uma estrutura política altamente centralizada, localizada na cidade de Tenochtitlán, atual Cidade do México. Quanto à civilização que dominou essa região, é CORRETO afirmar que ela foi denominada de:"
+          },
+          {
+            "alt1": "a) atenderam às aspirações políticas das elites econômico sociais das colônias.",
+            "alt2": "b) modificaram as estruturas do domínio social no interior das antigas colônias.",
+            "alt3": "c) permaneceram ligadas economicamente ao capitalismo comercial metropolitano.",
+            "alt4": "d) resultaram de um projeto democrático de unificação continental.",
+            "alt5": "e) ocorreram independentemente de transformações da história europeia.",
+            "answer": "a) atenderam às aspirações políticas das elites econômico sociais das colônias.",
+            "fontId": "MACRO, 2019",
+            "questId": "02",
+            "question": "A emancipação da América Latina na segunda década do século XIX ganhou contornos de revolução política: a monarquia católica fora destruída e substituída pelo princípio liberal de soberania do povo. [...] na América hispânica, o próprio conceito de monarquia fora rejeitado e o republicanismo liberal, sob diversas formas, fora oficialmente adotado por toda a parte. (Edwin Williamson. História da América Latina, 2018.) As Independências latino-americanas:"
+          }
+        ]
+      }
+    },
+    {
+      "Geografia": {
+        "questions": [
+          {
+            "alt1": "a) Norte",
+            "alt2": "b) Nordeste",
+            "alt3": "c) Centro-Oeste",
+            "alt4": "d) Sudeste",
+            "alt5": "e) Sul",
+            "answer": "d) Sudeste",
+            "fontId": "PSC, 2020",
+            "questId": "01",
+            "question": "O solo dessa região brasileira foi muito modificado e prejudicado por fatores como: poluição, crescimento desordenado, exploração agrícola e mineral, diminuição dos rios e grande devastação da área por elevado desmatamento, tornando-se um solo pobre e ácido. Este tipo de solo pertence à Região:"
+          },
+          {
+            "alt1": "a) NAFTA",
+            "alt2": "b) BRICS",
+            "alt3": "c) APEC",
+            "alt4": "d) CARICOM",
+            "alt5": "e) G7",
+            "answer": "e) G7",
+            "fontId": "PSC, 2020",
+            "questId": "02",
+            "question": "Qual dos grupos a seguir deliberou pelo repasse financeiro para ajudar no combate às queimadas na Amazônia, em 2019?"
+          }
+        ]
+      }
+    },
+    {
+      "Filosofia": {
+        "questions": [
+          {
+            "alt1": "a) valorização de disputas dialógicas.",
+            "alt2": "b) rejeição das convenções sociais.",
+            "alt3": "c) inspiração de natureza religiosa.",
+            "alt4": "d) exaltação do sofrimento.",
+            "alt5": "e) moderação das paixões.",
+            "answer": "e) moderação das paixões.",
+            "fontId": "ENEM, 2022",
+            "questId": "01",
+            "question": "Entretanto, nosso amigo Basso tem o ânimo alegre. Isso resulta da filosofia: estar alegre diante da morte, forte e contente qualquer que seja o estado do corpo, sem desfalecer, ainda que desfaleça. O excerto refere-se a uma carta de Sêneca na qual se apresenta como um bem fundamental da filosofia promover a:"
+          },
+          {
+            "alt1": "a) ajustar-se de imediato às dimensões humanas da observação.",
+            "alt2": "b) modificar as percepções habituais dos objetos artísticos.",
+            "alt3": "c) desvelar o mundo por meio da intensificação sensorial.",
+            "alt4": "d) transgredir a sensação de oposição entre o homem e a natureza.",
+            "alt5": "e) satisfazer os anseios de felicidade dos observadores.",
+            "answer": "a) ajustar-se de imediato às dimensões humanas da observação.",
+            "fontId": "MACRO, 2019",
+            "questId": "02",
+            "question": "Na contemplação do belo o conhecer puro ganhou a preponderância sem luta: a beleza do objeto facilita o conhecimento de sua Ideia. O sentimento do sublime nasce exatamente do fato de um objeto que tem relações desfavoráveis, hostis, com a vontade tornar-se objeto de contemplação. (Arthur Schopenhauer. Metafísica do belo, 2003. Adaptado.) As contemplações do belo e do sublime são semelhantes e, em um aspecto, diferentes. O belo distingue-se do sublime por"
+          }
+        ]
+      }
+    },
+    {
+      "Sociologia": {
+        "questions": [
+          {
+            "alt1": "a) supressão de eleições de representantes políticos.",
+            "alt2": "b) intervenção em áreas de vulnerabilidade pela Igreja.",
+            "alt3": "c) disseminação de projetos sociais em universidades.",
+            "alt4": "d) ampliação dos processos de concentração de renda.",
+            "alt5": "e) regulamentação das relações de trabalho pelo Legislativo.",
+            "answer": "a) supressão de eleições de representantes políticos.",
+            "fontId": "PSC, 2020",
+            "questId": "01",
+            "question": "O princípio básico do Estado de direito é o da eliminação do arbítrio no exercício dos poderes  públicos, com a consequente garantia de direitos dos indivíduos perante esses poderes. Estado de direito significa que nenhum indivíduo, presidente ou cidadão comum está acima da lei. Os governos democráticos exercem a autoridade por meio da lei e estão eles próprios sujeitos aos constrangimentos impostos pela lei. Nas sociedades contemporâneas, consiste em violação do princípio básico enunciado no texto:"
+          },
+          {
+            "alt1": "a) racismo estrutural.",
+            "alt2": "b) desemprego latente.",
+            "alt3": "c) concentração de renda.",
+            "alt4": "d) exclusão informacional.",
+            "alt5": "e) precariedade da educação.",
+            "answer": "a) racismo estrutural.",
+            "fontId": "PSC, 2020",
+            "questId": "02",
+            "question": "Eu estava pagando o sapateiro e conversando com um preto que estava lendo um jornal. Ele estava revoltado com um guarda civil que espancou um preto e amarrou numa árvore. O guarda civil é branco. E há certos brancos que transforma preto em bode expiatório. Quem sabe se guarda civil ignora que já foi extinta a escravidão e ainda estamos no regime da chibata? O texto, que guarda a grafia original da autora, expõe uma característica da sociedade brasileira, que é o(a):"
+          }
+        ]
+      }
+    },
+    {
+      "Ingles": {
+        "questions": [
+          {
+            "alt1": "a) qualidade da educação formal em Miami.",
+            "alt2": "b) prestígio da cultura cubana nos Estados Unidos.",
+            "alt3": "c) oportunidade de qualificação profissional em Miami.",
+            "alt4": "d) cenário da integração de cubanos nos Estados Unidos.",
+            "alt5": "e) fortalecimento do elo familiar em comunidades estadunidenses.",
+            "answer": "d) cenário da integração de cubanos nos Estados Unidos.",
+            "fontId": "Enem, 2022",
+            "questId": "01",
+            "question": "As my official bio reads, I was made in Cuba, assembled in Spain, and imported to the United States — meaning my mother, seven months pregnant, and the rest of my family arrived as exiles from Cuba to Madrid, where I was born. Less than two months later, we emigrated once more and settled in New York City, then eventually in Miami, where I was raised and educated. Although technically we lived in the United States, the Cuban community was culturally insular in Miami during the 1970s, bonded together by the trauma of exile. What’s more, it seemed that practically everyone was Cuban: my teachers, my classmates, the mechanic, the bus driver. I didn’t grow up feeling different or treated as a minority. The few kids who got picked on in my grade school were the ones with freckles and funny last names like Dawson and O’Neil. Ao relatar suas vivências, o autor destaca o(a):"
+          },
+          {
+            "alt1": "a) contentamento com a interação virtual. ",
+            "alt2": "b) zelo com o envio de mensagens.",
+            "alt3": "c) preocupação com a composição de textos.",
+            "alt4": "d) mágoa com o comportamento de alguém.",
+            "alt5": "e) insatisfação com uma forma de comunicação.",
+            "answer": "e) insatisfação com uma forma de comunicação.",
+            "fontId": "Enem, 2022",
+            "questId": "02",
+            "question": "I tend the mobile now, like an injured bird, We text, text, text, our significant words. I re-read your first, your second, your third, Look for your small xx, feeling absurd. The codes we send, arrive with a broken chord. I try to picture your hands, their image is blurred. Nothing my thumbs press, will ever be heard. Nesse poema, o eu lírico evidencia um sentimento de:"
+          }
+        ]
+      }
+    },
+    {
+      "Espanhol": {
+        "questions": [
+          {
+            "alt1": "a) das peculiaridades dos subúrbios hispano-americanos. ",
+            "alt2": "b) da força da conexão espiritual entre os amigos. ",
+            "alt3": "c) do papel da amizade em diferentes contextos.",
+            "alt4": "d) do hábito de reunir amigos em torno da mesa. ",
+            "alt5": "e) dos graus de intimidade entre os amigos.",
+            "answer": "c) do papel da amizade em diferentes contextos.",
+            "fontId": "Enem, 2022",
+            "questId": "01",
+            "question": "“En los suburbios de La Habana, llaman al amigo mi tierra o mi sangre. En Caracas, el amigo es mi pana o mi llave: pana, por panadería, la fuente del buen pan para las hambres del alma; y llave por... — Llave, por llave — me dice Mario Benedetti. Y me cuenta que cuando vivía en Buenos Aires, en los tiempos del terror, él llevaba cinco llaves ajenas en su llavero: cinco llaves, de cinco casas, de cinco amigos: las llaves que lo salvaron.” Nesse texto, o autor demonstra como as diferentes expressões existentes em espanhol para se referir a “amigo” variam em função:“"
+          },
+          {
+            "alt1": "a) conhecimento das pessoas sobre as tecnologias. ",
+            "alt2": "b) uso do celular alheio por pessoas desautorizadas.",
+            "alt3": "c) funcionamento de recursos tecnológicos obsoletos.",
+            "alt4": "d) ingerência do celular sobre as escolhas dos usuários.",
+            "alt5": "e) falta de informação sobre a configuração de alertas no celular.",
+            "answer": "d) ingerência do celular sobre as escolhas dos usuários.",
+            "fontId": "Enem, 2022",
+            "questId": "02",
+            "question": "“Es, no cabe duda, el instrumento más presente y más poderoso de todos los que entraron en nuestras vidas. Ni la televisión ni el ordenador, no hablemos ya del obsoleto fax o de las agendas o los libros electrónicos, ha tenido tal influencia, tal predicamento sobre nosotros. El móvil somos nosotros mismos. Todo desactivado e inerte, inocuo, ya les digo. Y de repente, tras un viaje y tres o cuatro imprudentes fotos, salta un aviso en la pantalla. Con sonido, además, pese a que tengo también todas las alertas desactivadas. Y mi monstruo doméstico me dice: tienes un recuerdo nuevo. Lo repetiré: tienes un recuerdo nuevo. ¿Y tú qué sabes? ¿Y a ti, máquina demoníaca, qué te importa? ¿Cómo te atreves a decirme qué son o no son mis recuerdos? ¿Qué es esta intromisión, este descaro? El pequeño hermano lo sabe casi todo. Sólo hay una esperanza: que la obsolescencia programada mate antes al pequeño hermano y que nosotros sigamos vivos, con los recuerdos que nos dé la gana.” No texto, o autor faz uma crítica ao(à):"
+          }
+        ]
+      }
+    },
+    {
+      "Fisica": {
+        "questions": [
+          {
+            "alt1": "a) 120 N.",
+            "alt2": "b) 300 N.",
+            "alt3": "c) 360 N.",
+            "alt4": "d) 450 N.",
+            "alt5": "e) 900 N.",
+            "answer": "d) 450 N.",
+            "fontId": "Enem, 2022",
+            "questId": "01",
+            "question": "Um pai faz um balanço utilizando dois segmentos paralelos e iguais da mesma corda para fixar uma tábua a uma barra horizontal. Por segurança, opta por um tipo de corda cuja tensão de ruptura seja 25% superior à tensão máxima calculada nas seguintes condições: O ângulo máximo atingido pelo balanço em relação à vertical é igual a 90°; Os filhos utilizarão o balanço até que tenham uma massa de 24 kg. Além disso, ele aproxima o movimento do balanço para o movimento circular uniforme, considera que a aceleração da gravidade é igual a 10 2 m s e despreza forças dissipativas. Qual é a tensão de ruptura da corda escolhida?"
+          },
+          {
+            "alt1": "a) 0,25 A.",
+            "alt2": "b) 0,33 A.",
+            "alt3": "c) 0,75 A.",
+            "alt4": "d) 1,00 A.",
+            "alt5": "e) 1,33 A.",
+            "answer": "a) 0,25 A.",
+            "fontId": "Enem, 2022",
+            "questId": "02",
+            "question": "Uma lanterna funciona com três pilhas de resistência interna igual a 0,5 Ω cada, ligadas em série. Quando posicionadas corretamente, devem acender a lâmpada incandescente de especificações 4,5 W e 4,5 V. Cada pilha na posição correta gera uma f.e.m. (força eletromotriz) de 1,5 V. Uma pessoa, ao trocar as pilhas da lanterna, comete o equívoco de inverter a posição de uma das pilhas. Considere que as pilhas mantêm contato independentemente da posição. Com esse equívoco, qual é a intensidade de corrente que passa pela lâmpada ao se ligar a lanterna?"
+          }
+        ]
+      }
+    },
+    {
+      "Biologia": {
+        "questions": [
+          {
+            "alt1": "a) incineração do lixo orgânico.",
+            "alt2": "b) construção de rede de esgoto.",
+            "alt3": "c) uso de vermífugo pela população.",
+            "alt4": "d) controle das populações dos vetores.",
+            "alt5": "e) consumo de carnes vermelhas bem cozidas.",
+            "answer": "d) controle das populações dos vetores.",
+            "fontId": "Enem, 2022",
+            "questId": "01",
+            "question": "De acordo com a Organização Mundial da Saúde, a filariose e a leishmaniose são consideradas doenças tropicais infecciosas e constituem uma preocupação para a saúde pública por ser alto o índice de mortalidade a elas associado. Uma medida profilática comum a essas duas doenças é o(a):"
+          },
+          {
+            "alt1": "a) concentrar o RNA viral para otimizar a técnica.",
+            "alt2": "b) identificar nas amostras anticorpos anti-SARS-CoV-2.",
+            "alt3": "c) proliferar o vírus em culturas, aumentando a carga viral.",
+            "alt4": "d) purificar ácidos nucleicos virais, facilitando a ação da enzima.",
+            "alt5": "e) obter moléculas de cDNAviral por meio da transcrição reversa.",
+            "answer": "e) obter moléculas de cDNAviral por meio da transcrição reversa.",
+            "fontId": "Enem, 2022",
+            "questId": "02",
+            "question": "Entre as diversas técnicas para diagnóstico da covid-19, destaca-se o teste genético. Considerando as diferentes variantes e cargas virais, um exemplo é a PCR, reação efetuada por uma enzima do tipo polimerase. Essa técnica permite identificar, com confiabilidade, o material genético do SARS-CoV-2, um vírus de RNA. Para comprovação da infecção por esse coronavírus, são coletadas amostras de secreções do indivíduo. Uma etapa que antecede a reação de PCR precisa ser realizada para permitir a amplificação do material genético do vírus. Essa etapa deve ser realizada para:"
+          }
+        ]
+      }
+    },
+    {
+      "Quimica": {
+        "questions": [
+          {
+            "alt1": "a) catalisador.",
+            "alt2": "b) oxidante.",
+            "alt3": "c) redutor.",
+            "alt4": "d) ácido.",
+            "alt5": "e) base.",
+            "answer": "b) oxidante.",
+            "fontId": "Enem, 2022",
+            "questId": "01",
+            "question": "Durante o ano de 2020, impulsionado pela necessidade de respostas rápidas e eficientes para desinfectar ambientes de possíveis contaminações com o SARS-CoV-2, causador da covid-19, diversas alternativas foram buscadas para os procedimentos de descontaminação de materiais e ambientes. Entre elas, o uso de ozônio em meio aquoso como agente sanitizante para pulverização em humanos e equipamentos de proteção em câmaras ou túneis, higienização de automóveis e de ambientes fechados e descontaminação de trajes. No entanto, pouca atenção foi dada à toxicidade do ozônio, à formação de subprodutos, ao nível de concentração segura e às precauções necessárias. O grande risco envolvido no emprego indiscriminado dessa substância deve-se à sua ação química como:"
+          },
+          {
+            "alt1": "a) Peneiração.",
+            "alt2": "b) Centrifugação.",
+            "alt3": "c) Extração por solvente.",
+            "alt4": "d) Destilação fracionada.",
+            "alt5": "e) Separação magnética.",
+            "answer": "b) Centrifugação.",
+            "fontId": "Enem, 2022",
+            "questId": "02",
+            "question": "O urânio é empregado como fonte de energia em reatores nucleares. Para tanto, o seu mineral deve ser refinado, convertido a hexafluoreto de urânio e posteriormente enriquecido, para aumentar de 0,7% a 3% a abundância de um isótopo específico — o urânio-235. Uma das formas de enriquecimento utiliza a pequena diferença de massa entre os hexafluoretos de urânio-235 e de urânio-238 para separá-los por efusão, precedida pela vaporização. Esses vapores devem efundir repetidamente milhares de vezes através de barreiras porosas formadas por telas com grande número de pequenos orifícios. No entanto, devido à complexidade e à grande quantidade de energia envolvida, cientistas e engenheiros continuam a pesquisar procedimentos alternativos de enriquecimento. ATKINS, P.; JONES, L. Princípios de química: questionando a vida moderna e o meio ambiente. Considerando a diferença de massa mencionada entre os dois isótopos, que tipo de procedimento alternativo ao da efusão pode ser empregado para tal finalidade?"
+          }
+        ]
+      }
+    }
+  ]
+}
