@@ -27,7 +27,7 @@
 * Have an IDE, which can be the [Android Studio](https://developer.android.com/) installed on your machine;
 * Have the [Java OpenJDK](https://www.azul.com/downloads/?package=jdk#download-openjdk) from version 17(LTS) to the latest;
 * Have an account on [Google Firebase](https://firebase.google.com/), create a project for the app;
-* Send the hounorte.json file from the database folder to the Realtime Database and update the database references for each course activity;
+* Send the file from `app/src/main/java/com/example/hounorte/database/hounorte.json` to the Realtime Database and update the database references for each course activity;
 
 ## 🛠️ Features
 
