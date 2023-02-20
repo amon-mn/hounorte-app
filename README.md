@@ -1,6 +1,6 @@
 ## 📱 Project: Hounorte
 
-* An application that will implement a digitalized study system focused on approval for entrance exams at public universities in Manaus \0/
+* An application that implements a digitalized study system focused on approval for ENEM and for the main entrance exams of public universities in Manaus \0/
 
 ## 🏳️ Status
 
@@ -32,12 +32,14 @@
 ## 🛠️ Features
 
 **The main features of the application are:**
- * 
+ * CRUD of user
+ * You can solve lists of ENEM questions and entrance exams from the main universities in Manaus.
  
 ![Animated GIF demonstrating project features](https://github.com/amon-mn/hounorte-app/blob/df3c0a07faaa0c215dd11b2c08107cd970c8eee3/app/src/main/res/drawable-xxhdpi/assets/hounorte.gif)
  
  
 ## 🔗 Links
+ * Figma Prototype: https://www.figma.com/file/VGst3s1mVw1f1SZe6ifVJ1/Telas---Hounorte?node-id=0%3A1&t=gPHmQrS5wI2QMkPg-1
  * Repository: https://github.com/amon-mn/hounorte-app
    
  
