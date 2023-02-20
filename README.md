@@ -32,7 +32,7 @@
 ## 🛠️ Features
 
 **The main features of the application are:**
- * CRUD of user
+ * User authentication
  * You can solve lists of ENEM questions and entrance exams from the main universities in Manaus.
  
 ![Animated GIF demonstrating project features](https://github.com/amon-mn/hounorte-app/blob/df3c0a07faaa0c215dd11b2c08107cd970c8eee3/app/src/main/res/drawable-xxhdpi/assets/hounorte.gif)
